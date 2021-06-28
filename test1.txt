@@ -1,0 +1,33 @@
+testsuites/pf_lib/tests.tcl:      if {[build::branch_eval 00_ONLY] && [set status [pf_mda_status $mda]] in [list "integration" "not_ready_for_test"]} {
+testsuites/pf_lib/tests.tcl:            if {$mda eq "x2-1000g-wdm" && [build::branch_eval 00_ONLY]} {
+testsuites/platform/ioctlFPGA/mgmtEthPort.tcl:  if {[build::branch_eval 21_2_OR_HIGHER]} {
+testsuites/platform/ioctlFPGA/mgmtEthPort.tcl:  } elseif {[build::branch_eval 20_10_OR_HIGHER]} {
+testsuites/platform/firmware.tcl:    if {! [build::branch_eval BETA] || "bootroms" in $opt(assembly)} {
+testsuites/platform/pf_sim/tests.tcl:    if {[build::branch_eval 00_ONLY]} {
+testsuites/platform/pf_sim/tests.tcl:          if {![build::branch_eval BETA]} {
+testsuites/platform/sf/tests.tcl:  if {[build::branch_eval BETA] && $opt(method) eq "remove"} {
+testsuites/platform/sf/tests.tcl:      if {[build::branch_eval BETA]} {
+testsuites/platform/sf/utils.tcl:  if { ![build::branch_eval "BETA"]} {
+testsuites/platform/sf/utils.tcl:  if {[build::branch_eval BETA]} {
+testsuites/platform/sf/utils.tcl:    if {[regexp {Switch Fabric} $line] && ![build::branch_eval "BETA"]} {
+testsuites/platform/sf/utils.tcl:  if {![dict exists $tapDict HEADER] && ![build::branch_eval "BETA"]} {
+testsuites/platform/boot/tests.tcl:          if {[build::branch_eval 20_5_OR_HIGHER] || ! [pf_chassis_has_vm_host_ep $esr] } {
+testsuites/platform/boot/tests.tcl:    if {[build::branch_eval 21_5_OR_HIGHER]} {
+testsuites/platform/boot/tests.tcl:    chk -skip -errIf {$opt(golden) && (! [pf_chassis_has_vm_host_ep $esr] || ! [build::branch_eval 21_5_OR_HIGHER])} -reason "Golden revert is only for vmhost platforms and 21.5 onwwards"
+testsuites/platform/boot/tests.tcl:        if {! [build::branch_eval BETA] && $opt(upgradeType) eq "aru"} {
+testsuites/platform/boot/tests.tcl:    vm_hw_check_vm_grub $esr $kernelPw -stopInMenu true -beta [build::branch_eval BETA] -recovery false
+testsuites/platform/boot/tests.tcl:    if {! [build::branch_eval 20_7_OR_HIGHER]} {
+testsuites/platform/boot/tests.tcl:    if {[build::branch_eval 21_2_OR_HIGHER]} {
+testsuites/platform/boot/tests.tcl:    set betaFlag [build::branch_eval BETA]
+testsuites/platform/boot/tests.tcl:        if {![build::branch_eval 20_10_OR_HIGHER]} {
+testsuites/platform/boot/tests.tcl:        if {[build::branch_eval 20_10_OR_HIGHER]} {
+testsuites/platform/boot/tests.tcl:        } elseif {! [build::branch_eval 20_2_OR_HIGHER]} {
+testsuites/platform/boot/tests.tcl:    chk -skip -if {[build::branch_eval 20_10_OR_HIGHER] || [GGV VERIFYDTS] eq "true"} -reason "This utility is not supported prior to 20.10"
+testsuites/platform/boot/tests.tcl:    if {[build::branch_eval 20_10_OR_HIGHER]} {
+testsuites/platform/boot/tests.tcl:      if {[build::branch_eval BETA]} {
+testsuites/platform/boot/utils.tcl:    if {! [build::branch_eval 20_2_OR_HIGHER] || [regexp {13.1|19.7|19.10} $opts(downgrade)] } {
+testsuites/platform/boot/utils.tcl:    if {[build::branch_eval 21_5_OR_HIGHER]} {
+testsuites/platform/boot/utils.tcl:    } elseif {[build::branch_eval 21_2_OR_HIGHER]} {
+testsuites/platform/boot/utils.tcl:    } elseif {[build::branch_eval 20_10_OR_HIGHER]} {
+testsuites/platform/boot/utils.tcl:    } elseif {[build::branch_eval 20_2_OR_HIGHER]} {
+testsuites/platform/boot/utils.tcl:  if {[ep::isCf $zipFile] && [build::branch_eval 20_10_OR_HIGHER]} {

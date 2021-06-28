@@ -1,0 +1,935 @@
+Suite	LOR_Basic_SA		00:26:53	00:24:35	PASSED
+15	LOR_Basic_SA_ldpToRsvp	
+2m 50s	2m 44s	
+15.1	    STAGE1 - Config Done	
+15.2	    STAGE2 - Bed ldpToRsvp Reconfig + Lsp creation Done	
+16	LOR_Basic_SA_rsvpToLdp	
+2m 49s	2m 43s	
+16.1	    STAGE1 - Config Done	
+16.2	    STAGE2 - Bed rsvpToLdp Reconfig + Lsp creation Done	
+17	LOR_Basic_SA_2	
+2m 56s	2m 42s	
+17.1	    STAGE1 - Config Done	
+17.2	    STAGE2 - Bed Reconfig + Lsp creation Done	
+17.3	    STAGE3 - Ecmp=2	
+17.4	    STAGE4 - Dut-C: noShut 10.10.11.3	
+18	LOR_Basic_SA_3	
+3m 32s	3m 10s	
+18.1	    STAGE1 - Config Done	
+18.2	    STAGE2 - Bed Reconfig + Lsp creation Done	
+18.3	    STAGE3HA - Lsp Shut + CPM SWO	
+18.4	    STAGE3HA - Lsp NO Shut + CPM SWO	
+18.5	    STAGE4 - Ecmp=2	
+19	LOR_Basic_SA_4	
+2m 46s	2m 36s	
+19.1	    STAGE1 - Config Done	
+19.2	    STAGE2 - Bed Reconfig + Lsp creation Done	
+19.3	    STAGE3 - A->D A->E Lsp creation Done	
+19.4	    STAGE4 - Dut-A: Endpoint D deletion check Done	
+19.5	    STAGE4a - Dut-A: Endpoint E deletion check Done	
+20	LOR_Basic_SA_5	
+3m 24s	3m 14s	
+20.1	    STAGE2 - Bed Reconfig + Lsp creation Done	
+20.2	    STAGE3 - Binding check after Lsp A->F Shut Done	
+20.3	    STAGE4 - Svc Traffic Check Done	
+21	LOR_Basic_SA_5_HA	
+2m 11s	1m 59s	
+21.1	    STAGE2 - Bed Reconfig + Lsp creation Done	
+21.2	    STAGE3HA - Lsp A->F Shut + [A C] CPM SWO	
+21.3	    STAGE3 - Binding check after Lsp A->F Shut Done	
+22	LOR_Basic_SA_6	
+6m 3s	5m 13s	
+22.1	    STAGE1 - Config Done	
+22.2	    STAGE2 - Bed Reconfig + Lsp creation Done	
+22.3	    STAGE3 - Ecmp=3	
+22.4	    STAGE4 - Lsp A-->E metric change	
+22.5	    STAGE5 - Links NoShut -> Lsp A->D reroute	
+22.6	    STAGE6 - Lsp A->D metric change	
+22.7	    STAGE7 - Lsp A->C->D metric change 1500->2000	
+22.8	    STAGE8 - Svc Traffic Check Done	
+23	SuiteCleanup::LOR_Basic_SA	
+22s	14s	
+Suite	LOR_Ecmp_SA		02:49:19	02:14:15	PASSED
+24	LOR_Ecmp_SA_1	
+8m 6s	6m 33s	
+24.1	    STAGE2 - Shut Links and set ecmp=2	
+24.2	    STAGE2 - Create lsps. Done	
+24.3	    STAGE3 - ecmp=3	
+24.4	    STAGE4 - ecmp=5	
+24.5	    STAGE5 - ecmp=6	
+24.6	    STAGE6 - Dut-B: Admin Shut OSPF if=[10.10.4.2]	
+25	LOR_Ecmp_SA_1_HA	
+8m 9s	6m 32s	
+25.1	    STAGE2 - Shut Links and set ecmp=2	
+25.2	    STAGE2 - Create lsps. Done	
+25.3	    STAGE3 - ecmp=3	
+25.4	    STAGE4 - ecmp=5	
+25.5	    STAGE4HA - Dut-A/C: cpm swo	
+25.6	    STAGE5 - ecmp=6	
+25.7	    STAGE6 - Dut-B: Admin Shut OSPF if=[10.10.4.2]	
+26	LOR_Ecmp_SA_2	
+6m 39s	4m 47s	
+26.1	    STAGE2 - Create Lsps and set ecmp=2	
+26.2	    STAGE3 - ecmp=3	
+26.3	    STAGE4 - ecmp=5	
+26.4	    STAGE5 - ecmp=6	
+26.5	    STAGE6 - B: Admin Shut OSPF if=[ip-10.10.4.2]	
+26.6	    STAGE7 - ecmp=1	
+26.7	    STAGE7 - ecmp=2	
+27	LOR_Ecmp_SA_3	
+4m 43s	3m 13s	
+27.1	    STAGE2 - Links Shut Done	
+27.2	    STAGE2 - Lsps created and set ecmp=1	
+27.3	    STAGE3 - ecmp=2	
+27.4	    STAGE4 - ecmp=3	
+27.5	    STAGE5 - ecmp=4	
+27.6	    STAGE6 - ecmp=5	
+27.7	    STAGE7 - Dut-C: Admin Shut OSPF if[10.10.3.3]	
+28	LOR_Ecmp_SA_3_HA	
+4m 50s	3m 14s	
+28.1	    STAGE2 - Links Shut Done	
+28.2	    STAGE2 - Lsps created and set ecmp=1	
+28.3	    STAGE3 - ecmp=2	
+28.4	    STAGE3HA - cpm swo on [C]	
+28.5	    STAGE4 - ecmp=3	
+28.6	    STAGE5 - ecmp=4	
+28.7	    STAGE5HA - cpm swo on [A]	
+28.8	    STAGE6 - ecmp=5	
+28.9	    STAGE6HA - DOUBLE cpm swo on [A]	
+28.10	    STAGE7 - Dut-C: Admin Shut OSPF if[10.10.3.3]	
+29	LOR_Ecmp_SA_4	
+7m 57s	6m 28s	
+29.1	    STAGE2 - ecmp=4	
+29.2	    STAGE3 - Shut lsp A_D_5	
+29.3	    STAGE4 - Change C-B and C-E link metric 500-->1000	
+29.4	    STAGE5 - Change C-D link metric 1000-->1500	
+29.5	    STAGE6 - Dut-C: Admin Shut if=10.10.11.3	
+29.6	    STAGE7 - Dut-C: Admin NoShut if=10.10.11.3	
+29.7	    STAGE8 - Set A lsp A_D_5 ldpOverRSvp to false	
+29.8	    STAGE9 - Set A lsp 5 ldpOverRSvp to true	
+29.9	    STAGE10 - Admin Shut Tldp sess A-D	
+29.10	    STAGE11 - Admin NoShut Tldp sess A-D	
+29.11	    STAGE12 - Admin NoShut lsp A_D_5	
+29.12	    STAGE13 - Change lsp A_B_1 A_E_3 metric to 1000	
+29.13	    STAGE14 - Restore lsp A_B_1 A_E_3 metric to 2000	
+30	LOR_Ecmp_SA_4_HA	
+7m 57s	6m 26s	
+30.1	    STAGE2 - ecmp=4	
+30.2	    STAGE3 - Shut lsp A_D_5	
+30.3	    STAGE4 - Change C-B and C-E link metric 500-->1000	
+30.4	    STAGE5 - Change C-D link metric 1000-->1500	
+30.5	    STAGE6 - Dut-C: Admin Shut if=10.10.11.3	
+30.6	    STAGE7 - Dut-C: Admin NoShut if=10.10.11.3	
+30.7	    STAGE8 - Set A lsp A_D_5 ldpOverRSvp to false	
+30.8	    STAGE9 - Set A lsp 5 ldpOverRSvp to true	
+30.9	    STAGE10 - Admin Shut Tldp sess A-D	
+30.10	    STAGE11 - Admin NoShut Tldp sess A-D	
+30.11	    STAGE12 - Admin NoShut lsp A_D_5	
+30.12	    STAGE13 - Change lsp A_B_1 A_E_3 metric to 1000	
+30.13	    STAGE14 - Restore lsp A_B_1 A_E_3 metric to 2000	
+31	LOR_Ecmp_SA_5	
+7m 55s	6m 38s	
+31.1	    STAGE2 - lsp LSP_B1 metric change	
+31.2	    STAGE3 - lsp A_D_3 metric change	
+31.3	    STAGE4 - Active lsp A_D_3 opState change	
+31.4	    STAGE5 - Active lsp A_D_4 ldpOverRsvp flag disable	
+31.5	    STAGE6 - Inactive lsp A_D_4 ldpOverRsvp flag enable	
+31.6	    STAGE7 - A-D Tldp session shut --> ildp	
+31.7	    STAGE8 - A-D Tldp session no shut --> lor	
+31.8	    STAGE8a - Dut-D OSPF shut	
+31.9	    STAGE8b - Dut-D OSPF no shut	
+31.10	    STAGE8c - Dut-A OSPF LdpOverRsvp disable	
+31.11	    STAGE8d - Dut-A OSPF LdpOverRsvp enable	
+31.12	    STAGE9 - Active lsp A_D_1 admin shut	
+31.13	    STAGE10 - Active lsp A_D_4 metric change 3000 --> 1000	
+31.14	    STAGE11 - Active lsp A_D_4 metric change 1000 --> 4000	
+31.15	    STAGE12 - Svc traffic check	
+32	LOR_Ecmp_SA_5_HA	
+8m 48s	7m 16s	
+32.1	    STAGE2 - lsp LSP_B1 metric change	
+32.2	    STAGE3 - lsp A_D_3 metric change	
+32.3	    STAGE4 - Active lsp A_D_3 opState change	
+32.4	    STAGE5 - Active lsp A_D_4 ldpOverRsvp flag disable	
+32.5	    STAGE6 - Inactive lsp A_D_4 ldpOverRsvp flag enable	
+32.6	    STAGE7 - A-D Tldp session shut --> ildp	
+32.7	    STAGE8 - A-D Tldp session no shut --> lor	
+32.8	    STAGE8a - Dut-D OSPF shut	
+32.9	    STAGE8b - Dut-D OSPF no shut	
+32.10	    STAGE8c - Dut-A OSPF LdpOverRsvp disable	
+32.11	    STAGE8d - Dut-A OSPF LdpOverRsvp enable	
+32.12	    STAGE9 - Active lsp A_D_1 admin shut	
+32.13	    STAGE10 - Active lsp A_D_4 metric change 3000 --> 1000	
+32.14	    STAGE11 - Active lsp A_D_4 metric change 1000 --> 4000	
+32.15	    STAGE12 - Svc traffic check	
+33	LOR_Ecmp_SA_6	
+14m 48s	12m 0s	
+33.1	    STAGE2 - ecmp=1	
+33.2	    STAGE2a - ecmp=2	
+33.3	    STAGE2b - ecmp=3	
+33.4	    STAGE2c - ecmp=4	
+33.5	    STAGE2d - ecmp=5	
+33.6	    STAGE3 - C--D Metric 1000-->500	
+33.7	    STAGE4 - Admin Shut if=10.10.11.3	
+33.8	    STAGE5 - lsp A_D_1 ldpOverRsvpInclude disable	
+33.9	    STAGE6 - lsp A_D_1 ldpOverRsvpInclude enable	
+33.10	    STAGE7 - A--D Tldp shut	
+33.11	    STAGE8 - A--D Tldp no shut	
+33.12	    STAGE8a - Remove A--B, B--D, A--C, C--E, C--D ldp ifs	
+33.13	    STAGE8b - Add A--B, B--D, A--C, C--E, C--D ldp ifs	
+33.14	    STAGE9 - No shut if=10.10.11.3 with metric 1000	
+33.15	    STAGE10 - Change lsps A_E_5/A_D_6 metric 2500/3000-->2000/2000	
+33.16	    STAGE10b - ecmp=5	
+33.17	    STAGE10c - ecmp=6	
+33.18	    STAGE11 - Lower lsp A_E_5 metric 2000-->1500	
+33.19	    STAGE11b - Enable TE metric on lsp A_D_1	
+33.20	    STAGE12 - Svc Traffic	
+34	LOR_Ecmp_SA_7	
+5m 15s	4m 52s	
+34.1	    STAGE2 - Admin shut B-C_Lag, B-C and D-E - Create lsp A_D_1 A_E_2	
+34.2	    STAGE3a - Clear card 1 on [B C D E]	
+34.3	    STAGE3 - Create lsp A_D_3 + Shut LSP A_E_2	
+34.4	    STAGE4 - Svc Traffic	
+35	LOR_Ecmp_SA_8	
+4m 23s	3m 51s	
+35.1	    STAGE2 - Shut links: B-C C-D E-D + create lsps	
+35.2	    STAGE3 - Create lsps A-C-D and D-E-F	
+35.3	    STAGE4 - Shut if=10.10.9.4	
+35.4	    STAGE5 - Svc Traffic	
+36	LOR_Ecmp_SA_9	
+10m 11s	8m 50s	
+36.1	    STAGE2 - Shut B-C lag + newLsp A-D A-E + ecmp=1	
+36.2	    STAGE2a - ecmp=2	
+36.3	    STAGE3 - if=1/1/c3/1 Shut + ecmp=1	
+36.4	    STAGE4 - if=1/1/c3/1 noShut + ecmp=1	
+36.5	    STAGE4a - ecmp=2	
+36.6	    STAGE5 - OSPF Shut + ecmp=[1]	
+36.7	    STAGE5a - ecmp=2	
+36.8	    STAGE6 - OSPF noShut + ecmp=1	
+36.9	    STAGE6a - ecmp=2	
+36.10	    STAGE7 - Svc Traffic	
+37	LOR_Ecmp_SA_10	
+10m 12s	8m 43s	
+37.1	    STAGE2 - Lsps Creation	
+37.2	    STAGE2 - ecmp=2	
+37.3	    STAGE3 - Manual LSPs for Tldp sess [A_D_3 A_D_4]	
+37.4	    STAGE3 - Manual LSPs for Tldp sess [A_D_1 A_D_2]	
+37.5	    STAGE5 - Create static lsps - ecmp=3	
+37.6	    STAGE6 - Remove static lsps	
+37.7	    STAGE6a - setSPOspfPreference 44	
+37.8	    STAGE7 - Svc Traffic	
+38	LOR_Ecmp_SA_11	
+3m 8s	2m 51s	
+38.1	    STAGE2 - Lsps Creation	
+38.2	    STAGE2 - ecmp=1	
+38.3	    STAGE3 - ecmp=2	
+38.4	    STAGE4 - Svc Traffic	
+39	LOR_Ecmp_SA_12	
+13m 26s	9m 38s	
+40	LOR_Ecmp_SA_13	
+12m 45s	9m 48s	
+41	LOR_Ecmp_SA_14	
+13m 14s	11m 30s	
+42	LOR_Ecmp_SA_15	
+12m 37s	10m 50s	
+43	SuiteCleanup::LOR_Ecmp_SA	
+4m 16s	15s	
+Suite	LOR_Ecmp_SA_16nH		00:17:30	00:18:57	PASSED
+44	SuiteSetup::LOR_Ecmp_SA_16nH	
+1m 51s	1m 19s	
+45	LOR_Ecmp_SA_16nH_epipe	
+10m 11s	15m 33s	
+45.1	    STAGE1 - Config Done	
+45.2	    STAGE2 - SVC Config Done	
+45.3	    STAGE2 - Traffic Check	
+45.4	    STAGE3 - Event=[ecmpChange] Done	
+45.5	    STAGE3 - Event=[ldpSh_Nosh] Done	
+45.6	    STAGE3 - Event=[clr_ldpInst] Done	
+45.7	    STAGE3 - Event=[Toggle_TunnelInTunnel] Done	
+45.8	    STAGE3 - Event=[Toggle_LOR] Done	
+46	SuiteCleanup::LOR_Ecmp_SA_16nH	
+5m 28s	2m 5s	
+Suite	LdpOverRsvp		00:20:19	00:02:21	FAILED
+47	SuiteSetup::LdpOverRsvp	
+45s	45s	ERROR: |21:58:08 +00:00.011| configureLdpOverRsvpDUTBGPProtocol: Problem encountered while configuring BGP LDP-Shortcut
+masterlog.html
+ test_console.24.html
+48	ldp_over_rsvp_tc_1	Test Console Log	Masterlog	15s		
+49	ldp_over_rsvp_tc_2	Test Console Log	Masterlog	1m 4s		
+50	ldp_over_rsvp_tc_3	Test Console Log	Masterlog	22s		
+51	ldp_over_rsvp_tc_4	Test Console Log	Masterlog	21s		
+52	ldp_over_rsvp_tc_5	Test Console Log	Masterlog	1m 6s		
+53	ldp_over_rsvp_tc_6	Test Console Log	Masterlog	24s		
+54	ldp_over_rsvp_tc_7	Test Console Log	Masterlog	23s		
+55	ldp_over_rsvp_tc_8	Test Console Log	Masterlog	1s		
+56	ldp_over_rsvp_tc_9	Test Console Log	Masterlog	29s		
+57	ldp_over_rsvp_tc_10	Test Console Log	Masterlog	1m 36s		
+58	ldp_over_rsvp_tc_11	Test Console Log	Masterlog	4m 22s		
+59	ldp_over_rsvp_tc_12	Test Console Log	Masterlog	1m 34s		
+60	ldp_over_rsvp_tc_13	Test Console Log	Masterlog	1m 30s		
+61	ldp_over_rsvp_tc_14	Test Console Log	Masterlog	2m 23s		
+62	ldp_over_rsvp_tc_15	Test Console Log	Masterlog	2m 16s		
+63	SuiteCleanup::LdpOverRsvp	
+1m 28s	1m 36s	ERROR: |21:58:52 +00:00.000| Problem encountered while deleting VPRN interface vprn_10-172.13.1.1
+masterlog.html
+ test_console.24.html
+Suite	LOR_Ecmp_MA		00:23:15	00:20:57	FAILED
+64	LOR_Ecmp_MA_1	
+9m 34s	8m 32s	ERROR: |22:01:58 +00:00.000| ldp_bhchecklsp[A_E_4]: FAILED after [6] retries
+masterlog.html
+ test_console.25.html
+64.1	    STAGE1 - Lsps creation	
+ERROR: |22:01:58 +00:00.000| ldp_bhchecklsp[A_E_4]: FAILED after [6] retries
+test_console.25.html
+65	LOR_Ecmp_MA_autoTldpLsp_1	
+13m 15s	12m 11s	ERROR: |22:10:47 +00:00.001| No of lsp's expected is not the same in vRtrMplsLspName table
+masterlog.html
+ test_console.26.html
+65.1	    STAGE1 - Lsps creation	
+ERROR: |22:10:47 +00:00.001| No of lsp's expected is not the same in vRtrMplsLspName table
+test_console.26.html
+66	SuiteCleanup::LOR_Ecmp_MA	
+26s	14s	
+Suite	LOR_Basic_SA_isis		00:28:31	00:26:25	PASSED
+67	LOR_Basic_SA_ldpToRsvp_isis	
+2m 52s	2m 44s	
+67.1	    STAGE1 - Config Done	
+67.2	    STAGE2 - Bed ldpToRsvp Reconfig + Lsp creation Done	
+68	LOR_Basic_SA_rsvpToLdp_isis	
+3m 56s	3m 48s	
+68.1	    STAGE1 - Config Done	
+68.2	    STAGE2 - Bed rsvpToLdp Reconfig + Lsp creation Done	
+68.3	    STAGE5 - Svc Traffic Check	
+69	LOR_Basic_SA_2_isis	
+2m 46s	2m 31s	
+69.1	    STAGE1 - Config Done	
+69.2	    STAGE2 - Bed Reconfig + Lsp creation Done	
+69.3	    STAGE3 - Ecmp=2	
+69.4	    STAGE4 - Dut-C: noShut 10.10.11.3	
+70	LOR_Basic_SA_3_isis	
+3m 20s	3m 3s	
+70.1	    STAGE1 - Config Done	
+70.2	    STAGE2 - Bed Reconfig + Lsp creation Done	
+70.3	    STAGE3HA - Lsp Shut + CPM SWO	
+70.4	    STAGE3HA - Lsp NO Shut + CPM SWO	
+70.5	    STAGE4 - Ecmp=2	
+71	LOR_Basic_SA_4_isis	
+4m 26s	4m 8s	
+71.1	    STAGE1 - Config Done	
+71.2	    STAGE2 - Bed Reconfig + Lsp creation Done	
+71.3	    STAGE3 - A->D A->E Lsp creation Done	
+71.4	    STAGE4 - Dut-A: Endpoint D deletion check Done	
+71.5	    STAGE4a - Dut-A: Endpoint E deletion check Done	
+71.6	    STAGE5 - Svc Traffic Check	
+72	LOR_Basic_SA_5_isis	
+1m 53s	1m 50s	
+72.1	    STAGE2 - Bed Reconfig + Lsp creation Done	
+72.2	    STAGE3 - Binding check after Lsp A->F Shut Done	
+73	LOR_Basic_SA_5_HA_isis	
+3m 18s	3m 5s	
+73.1	    STAGE2 - Bed Reconfig + Lsp creation Done	
+73.2	    STAGE3HA - Lsp A->F Shut + [A C] CPM SWO	
+73.3	    STAGE3 - Binding check after Lsp A->F Shut Done	
+73.4	    STAGE4 - Svc Traffic Check Done	
+74	LOR_Basic_SA_6_isis	
+5m 35s	5m 2s	
+74.1	    STAGE1 - Config Done	
+74.2	    STAGE2 - Bed Reconfig + Lsp creation Done	
+74.3	    STAGE3 - Ecmp=3	
+74.4	    STAGE4 - Lsp A-->E metric change	
+74.5	    STAGE5 - Links NoShut -> Lsp A->D reroute	
+74.6	    STAGE6 - Lsp A->D metric change	
+74.7	    STAGE7 - Lsp A->C->D metric change 1500->2000	
+74.8	    STAGE8 - Svc Traffic Check Done	
+75	SuiteCleanup::LOR_Basic_SA_isis	
+25s	14s	
+Suite	LOR_Ecmp_SA_isis		02:21:58	01:56:07	PASSED
+76	LOR_Ecmp_SA_1_isis	
+9m 46s	8m 7s	
+76.1	    STAGE2 - Shut Links and set ecmp=2	
+76.2	    STAGE2 - Create lsps. Done	
+76.3	    STAGE3 - ecmp=3	
+76.4	    STAGE4 - ecmp=5	
+76.5	    STAGE5 - ecmp=6	
+76.6	    STAGE6 - Dut-B: Admin Shut ISIS if=[10.10.4.2]	
+77	LOR_Ecmp_SA_1_HA_isis	
+8m 3s	6m 28s	
+77.1	    STAGE2 - Shut Links and set ecmp=2	
+77.2	    STAGE2 - Create lsps. Done	
+77.3	    STAGE3 - ecmp=3	
+77.4	    STAGE4 - ecmp=5	
+77.5	    STAGE4HA - Dut-A/C: cpm swo	
+77.6	    STAGE5 - ecmp=6	
+77.7	    STAGE6 - Dut-B: Admin Shut ISIS if=[10.10.4.2]	
+78	LOR_Ecmp_SA_2_isis	
+6m 39s	4m 45s	
+78.1	    STAGE2 - Create Lsps and set ecmp=2	
+78.2	    STAGE3 - ecmp=3	
+78.3	    STAGE4 - ecmp=5	
+78.4	    STAGE5 - ecmp=6	
+78.5	    STAGE6 - B: Admin Shut ISIS if=[ip-10.10.4.2]	
+78.6	    STAGE7 - ecmp=1	
+78.7	    STAGE7 - ecmp=2	
+79	LOR_Ecmp_SA_3_isis	
+7m 5s	5m 20s	
+79.1	    STAGE2 - Links Shut Done	
+79.2	    STAGE2 - Lsps created and set ecmp=1	
+79.3	    STAGE3 - ecmp=2	
+79.4	    STAGE4 - ecmp=3	
+79.5	    STAGE5 - ecmp=4	
+79.6	    STAGE6 - ecmp=5	
+79.7	    STAGE7 - Dut-C: Admin Shut ISIS if[10.10.3.3]	
+80	LOR_Ecmp_SA_3_HA_isis	
+7m 24s	5m 27s	
+80.1	    STAGE2 - Links Shut Done	
+80.2	    STAGE2 - Lsps created and set ecmp=1	
+80.3	    STAGE3 - ecmp=2	
+80.4	    STAGE3HA - cpm swo on [A C]	
+80.5	    STAGE4 - ecmp=3	
+80.6	    STAGE5 - ecmp=4	
+80.7	    STAGE5HA - cpm swo on [A C]	
+80.8	    STAGE6 - ecmp=5	
+80.9	    STAGE6HA - DOUBLE cpm swo on [A C]	
+80.10	    STAGE7 - Dut-C: Admin Shut ISIS if[10.10.3.3]	
+81	LOR_Ecmp_SA_4_isis	
+12m 32s	10m 50s	
+81.1	    STAGE2 - ecmp=4	
+81.2	    STAGE3 - Shut lsp A_D_5	
+81.3	    STAGE4 - Change C-B and C-E link metric 500-->1000	
+81.4	    STAGE5 - Change C-D link metric 1000-->1500	
+81.5	    STAGE6 - Dut-C: Admin Shut if=10.10.11.3	
+81.6	    STAGE7 - Dut-C: Admin NoShut if=10.10.11.3	
+81.7	    STAGE8 - Set A lsp A_D_5 ldpOverRSvp to false	
+81.8	    STAGE9 - Set A lsp 5 ldpOverRSvp to true	
+81.9	    STAGE10 - Admin Shut Tldp sess A-D	
+81.10	    STAGE11 - Admin NoShut Tldp sess A-D	
+81.11	    STAGE12 - Admin NoShut lsp A_D_5	
+81.12	    STAGE13 - Change lsp A_B_1 A_E_3 metric to 1000	
+81.13	    STAGE14 - Restore lsp A_B_1 A_E_3 metric to 2000	
+81.14	    STAGE15 - Svc Traffic	
+82	LOR_Ecmp_SA_4_HA_isis	
+14m 15s	10m 34s	
+82.1	    STAGE2 - ecmp=4	
+82.2	    STAGE3 - Shut lsp A_D_5	
+82.3	    STAGE4 - Change C-B and C-E link metric 500-->1000	
+82.4	    STAGE5 - Change C-D link metric 1000-->1500	
+82.5	    STAGE6 - Dut-C: Admin Shut if=10.10.11.3	
+82.6	    STAGE7 - Dut-C: Admin NoShut if=10.10.11.3	
+82.7	    STAGE8 - Set A lsp A_D_5 ldpOverRSvp to false	
+82.8	    STAGE9 - Set A lsp 5 ldpOverRSvp to true	
+82.9	    STAGE10 - Admin Shut Tldp sess A-D	
+82.10	    STAGE11 - Admin NoShut Tldp sess A-D	
+82.11	    STAGE12 - Admin NoShut lsp A_D_5	
+82.12	    STAGE13 - Change lsp A_B_1 A_E_3 metric to 1000	
+82.13	    STAGE14 - Restore lsp A_B_1 A_E_3 metric to 2000	
+82.14	    STAGE15 - Svc Traffic	
+83	LOR_Ecmp_SA_5_isis	
+11m 40s	9m 35s	
+83.1	    STAGE2 - lsp LSP_B1 metric change	
+83.2	    STAGE3 - lsp A_D_3 metric change	
+83.3	    STAGE4 - Active lsp A_D_3 opState change	
+83.4	    STAGE5 - Active lsp A_D_4 ldpOverRsvp flag disable	
+83.5	    STAGE6 - Inactive lsp A_D_4 ldpOverRsvp flag enable	
+83.6	    STAGE7 - A-D Tldp session shut --> ildp	
+83.7	    STAGE8 - A-D Tldp session no shut --> lor	
+83.8	    STAGE8a - Dut-D ISIS shut	
+83.9	    STAGE8b - Dut-D ISIS no shut	
+83.10	    STAGE8c - Dut-A ISIS LdpOverRsvp disable	
+83.11	    STAGE8d - Dut-A ISIS LdpOverRsvp enable	
+83.12	    STAGE9 - Active lsp A_D_1 admin shut	
+83.13	    STAGE10 - Active lsp A_D_4 metric change 3000 --> 1000	
+83.14	    STAGE11 - Active lsp A_D_4 metric change 1000 --> 4000	
+83.15	    STAGE12 - Svc traffic check	
+84	LOR_Ecmp_SA_5_HA_isis	
+12m 4s	9m 37s	
+84.1	    STAGE2 - lsp LSP_B1 metric change	
+84.2	    STAGE3 - lsp A_D_3 metric change	
+84.3	    STAGE4 - Active lsp A_D_3 opState change	
+84.4	    STAGE5 - Active lsp A_D_4 ldpOverRsvp flag disable	
+84.5	    STAGE6 - Inactive lsp A_D_4 ldpOverRsvp flag enable	
+84.6	    STAGE7 - A-D Tldp session shut --> ildp	
+84.7	    STAGE8 - A-D Tldp session no shut --> lor	
+84.8	    STAGE8a - Dut-D ISIS shut	
+84.9	    STAGE8b - Dut-D ISIS no shut	
+84.10	    STAGE8c - Dut-A ISIS LdpOverRsvp disable	
+84.11	    STAGE8d - Dut-A ISIS LdpOverRsvp enable	
+84.12	    STAGE9 - Active lsp A_D_1 admin shut	
+84.13	    STAGE10 - Active lsp A_D_4 metric change 3000 --> 1000	
+84.14	    STAGE11 - Active lsp A_D_4 metric change 1000 --> 4000	
+84.15	    STAGE12 - Svc traffic check	
+85	LOR_Ecmp_SA_6_isis	
+22m 6s	18m 42s	
+85.1	    STAGE2 - ecmp=1	
+85.2	    STAGE2a - ecmp=2	
+85.3	    STAGE2b - ecmp=3	
+85.4	    STAGE2c - ecmp=4	
+85.5	    STAGE2d - ecmp=5	
+85.6	    STAGE3 - C--D Metric 1000-->500	
+85.7	    STAGE4 - Admin Shut if=10.10.11.3	
+85.8	    STAGE5 - lsp A_D_1 ldpOverRsvpInclude disable	
+85.9	    STAGE6 - lsp A_D_1 ldpOverRsvpInclude enable	
+85.10	    STAGE7 - A--D Tldp shut	
+85.11	    STAGE8 - A--D Tldp no shut	
+85.12	    STAGE8a - Remove A--B, B--D, A--C, C--E, C--D ldp ifs	
+85.13	    STAGE8b - Add A--B, B--D, A--C, C--E, C--D ldp ifs	
+85.14	    STAGE9 - No shut if=10.10.11.3 with metric 1000	
+85.15	    STAGE10 - Change lsps A_E_5/A_D_6 metric 2500/3000-->2000/2000	
+85.16	    STAGE10b - ecmp=5	
+85.17	    STAGE10c - ecmp=6	
+85.18	    STAGE11 - Lower lsp A_E_5 metric 2000-->1500	
+85.19	    STAGE11b - Enable TE metric on lsp A_D_1	
+85.20	    STAGE12 - Svc Traffic	
+86	LOR_Ecmp_SA_7_isis	
+5m 29s	5m 4s	
+86.1	    STAGE2 - Admin shut B-C_Lag, B-C and D-E - Create lsp A_D_1 A_E_2	
+86.2	    STAGE3a - Clear card 1 on [B C D E]	
+86.3	    STAGE3 - Create lsp A_D_3 + Shut LSP A_E_2	
+86.4	    STAGE4 - Svc Traffic	
+87	LOR_Ecmp_SA_8_isis	
+4m 39s	4m 6s	
+87.1	    STAGE2 - Shut links: B-C C-D E-D + create lsps	
+87.2	    STAGE3 - Create lsps A-C-D and D-E-F	
+87.3	    STAGE4 - Shut if=10.10.9.4	
+87.4	    STAGE5 - Svc Traffic	
+88	LOR_Ecmp_SA_9_isis	
+9m 53s	8m 35s	
+88.1	    STAGE2 - Shut B-C lag + newLsp A-D A-E + ecmp=1	
+88.2	    STAGE2a - ecmp=2	
+88.3	    STAGE3 - if=1/1/c3/1 Shut + ecmp=1	
+88.4	    STAGE4 - if=1/1/c3/1 noShut + ecmp=1	
+88.5	    STAGE4a - ecmp=2	
+88.6	    STAGE5 - ISIS Shut + ecmp=[1]	
+88.7	    STAGE5a - ecmp=2	
+88.8	    STAGE6 - ISIS noShut + ecmp=1	
+88.9	    STAGE6a - ecmp=2	
+88.10	    STAGE7 - Svc Traffic	
+89	LOR_Ecmp_SA_10_isis	
+9m 58s	8m 42s	
+89.1	    STAGE2 - Lsps Creation	
+89.2	    STAGE2 - ecmp=2	
+89.3	    STAGE3 - Manual LSPs for Tldp sess [A_D_3 A_D_4]	
+89.4	    STAGE3 - Manual LSPs for Tldp sess [A_D_1 A_D_2]	
+89.5	    STAGE5 - Create static lsps - ecmp=3	
+89.6	    STAGE6 - Remove static lsps	
+89.7	    STAGE6a - setSPOspfPreference 44	
+89.8	    STAGE7 - Svc Traffic	
+90	SuiteCleanup::LOR_Ecmp_SA_isis	
+25s	15s	
+Suite	LOR_Ecmp_SA_16nH_isis		00:26:01	00:19:23	PASSED
+91	SuiteSetup::LOR_Ecmp_SA_16nH_isis	
+2m 19s	1m 49s	
+92	LOR_Ecmp_SA_16nH_vplsBcast_isis	
+16m 27s	15m 41s	
+92.1	    STAGE1 - Config Done	
+92.2	    STAGE2 - SVC Config Done	
+92.3	    STAGE2 - Traffic Check	
+92.4	    STAGE3 - Event=[ecmpChange] Done	
+92.5	    STAGE3 - Event=[ldpSh_Nosh] Done	
+92.6	    STAGE3 - Event=[clr_ldpInst] Done	
+92.7	    STAGE3 - Event=[Toggle_TunnelInTunnel] Done	
+92.8	    STAGE3 - Event=[Toggle_LOR] Done	
+93	SuiteCleanup::LOR_Ecmp_SA_16nH_isis	
+7m 15s	1m 53s	
+Suite	LdpOverRsvp_isis		00:20:41	00:02:44	FAILED
+94	SuiteSetup::LdpOverRsvp_isis	
+1m 19s	1m 16s	ERROR: |01:03:29 +00:00.011| configureLdpOverRsvpDUTBGPProtocol: Problem encountered while configuring BGP LDP-Shortcut
+masterlog.html
+ test_console.46.html
+95	ldp_over_rsvp_Isis_tc_1	Test Console Log	Masterlog	15s		
+96	ldp_over_rsvp_Isis_tc_2	Test Console Log	Masterlog	1m 4s		
+97	ldp_over_rsvp_Isis_tc_3	Test Console Log	Masterlog	22s		
+98	ldp_over_rsvp_Isis_tc_4	Test Console Log	Masterlog	21s		
+99	ldp_over_rsvp_Isis_tc_5	Test Console Log	Masterlog	1m 6s		
+100	ldp_over_rsvp_Isis_tc_6	Test Console Log	Masterlog	24s		
+101	ldp_over_rsvp_Isis_tc_7	Test Console Log	Masterlog	23s		
+102	ldp_over_rsvp_Isis_tc_8	Test Console Log	Masterlog	1s		
+103	ldp_over_rsvp_Isis_tc_9	Test Console Log	Masterlog	29s		
+104	ldp_over_rsvp_Isis_tc_10	Test Console Log	Masterlog	1m 36s		
+105	ldp_over_rsvp_Isis_tc_11	Test Console Log	Masterlog	4m 25s		
+106	ldp_over_rsvp_Isis_tc_12	Test Console Log	Masterlog	1m 34s		
+107	ldp_over_rsvp_Isis_tc_13	Test Console Log	Masterlog	1m 30s		
+108	ldp_over_rsvp_Isis_tc_14	Test Console Log	Masterlog	2m 17s		
+109	ldp_over_rsvp_Isis_tc_15	Test Console Log	Masterlog	2m 16s		
+110	SuiteCleanup::LdpOverRsvp_isis	
+1m 19s	1m 28s	ERROR: |01:04:39 +00:00.000| Problem encountered while deleting VPRN interface vprn_10-172.13.1.1
+masterlog.html
+ test_console.46.html
+Suite	LOR_Ecmp_MA_isis		00:16:20	00:13:35	PASSED
+111	LOR_Ecmp_MA_1_isis	
+15m 57s	13m 20s	
+111.1	    STAGE1 - Lsps creation	
+111.2	    STAGE2 - A ecmp=[1]	
+111.3	    STAGE2a - A ecmp=2	
+111.4	    STAGE2b - A ecmp=3	
+111.5	    STAGE2c - A ecmp=6	
+111.6	    STAGE3 - Admin shut B--C link	
+111.7	    STAGE4 - Admin NO shut B--C link	
+111.8	    STAGE5 - A ecmp=1	
+111.9	    STAGE5a - lsp A_B_1 ldpOverRsvpInclude enable	
+111.10	    STAGE6a - Admin shut lsp [A_B_2 A_B_3 A_E_5 A_E_6]	
+111.11	    STAGE6a - lsp A_B_1 ldpOverRsvpInclude disable	
+111.12	    STAGE7 - NOshut lsp[A_B_2 A_B_3 A_E_5 A_E_6] - A ecmp=2	
+111.13	    STAGE7a - Shut A-B TLDP Session	
+111.14	    STAGE8 - No Shut Tldp A-B	
+111.15	    STAGE8a - E: Admin Shut ISIS instanceId 0	
+111.16	    STAGE8b - E: Admin No Shut ISIS instanceId 0	
+111.17	    STAGE9 - Svc Traffic Check	
+112	SuiteCleanup::LOR_Ecmp_MA_isis	
+23s	14s	
+Suite	LdpBasic_SA_AggPref_isis		01:07:55	00:57:44	PASSED
+113	aggPrefix_test1_isis	
+3m 15s	3m 3s	
+113.1	    STAGE1 - BedSetup + Binding check - done	
+113.2	    STAGE2 - Remove F aggPrefix Fecs supporting static-rt	
+113.3	    STAGE2 - Bindings cleanup done	
+113.4	    STAGE3 - Remaining Active Binding Check - done	
+113.5	    STAGE4 - Add static-rt	
+113.6	    STAGE4 - Bindings Re-Installed	
+113.7	    STAGE5 - HA Skipped	
+113.8	    STAGE6 - A: Admin Shut aggPrefix	
+113.9	    STAGE6 - Bindings check done	
+114	aggPrefix_test1_ecmp_isis	
+4m 8s	3m 9s	
+114.1	    STAGE1 - BedSetup + Binding check - done	
+114.2	    STAGE2 - Remove F aggPrefix Fecs supporting static-rt	
+114.3	    STAGE2 - Bindings cleanup done	
+114.4	    STAGE3 - Remaining Active Binding Check - done	
+114.5	    STAGE4 - Add static-rt	
+114.6	    STAGE4 - Bindings Re-Installed	
+114.7	    STAGE5 - HA Skipped	
+114.8	    STAGE6 - A: Admin Shut aggPrefix	
+114.9	    STAGE6 - Bindings check done	
+115	aggPrefix_test1_HA_isis	
+4m 31s	3m 34s	
+115.1	    STAGE1 - BedSetup + Binding check - done	
+115.2	    STAGE2 - Remove F aggPrefix Fecs supporting static-rt	
+115.3	    STAGE2 - Bindings cleanup done	
+115.4	    STAGE3 - Remaining Active Binding Check - done	
+115.5	    STAGE4 - Add static-rt	
+115.6	    STAGE4 - Bindings Re-Installed	
+115.7	    STAGE5 - F HA Done	
+115.8	    STAGE5 - Check Bindings Done	
+115.9	    STAGE6 - A: Admin Shut aggPrefix	
+115.10	    STAGE6 - Bindings check done	
+116	aggPrefix_test2_isis	
+5m 48s	5m 20s	
+116.1	    STAGE1 - BedSetup + Binding check - done	
+116.2	    STAGE2 - Create static-fecs - done	
+116.3	    STAGE2 - Bindings check done	
+116.4	    STAGE3 - A: Replaced blakhole static-rt with indirect one	
+116.5	    STAGE3 - Bindings check done	
+116.6	    STAGE4 - A: Delete + Re-create static-rt X/26 done	
+116.7	    STAGE4 - Bindings check done	
+116.8	    STAGE5 - A: Shut aggPrefix	
+116.9	    STAGE5 - A: Local aggPrefFecs cleanup - done	
+116.10	    STAGE5 - A: Remote aggPrefFecs from F cleanup - done	
+116.11	    STAGE5 - Bindings check done	
+116.12	    STAGE6 - A: noShut aggPrefix	
+116.13	    STAGE6 - Bindings check done	
+116.14	    STAGE7 - A: LDP instance shut/noShut done	
+116.15	    STAGE8 - A: LDP instance ipv4 clear - done	
+116.16	    STAGE9 - F System Interface flapping done	
+117	aggPrefix_test2_ecmp_isis	
+6m 51s	5m 35s	
+117.1	    STAGE1 - BedSetup + Binding check - done	
+117.2	    STAGE2 - Create static-fecs - done	
+117.3	    STAGE2 - Bindings check done	
+117.4	    STAGE3 - A: Replaced blakhole static-rt with indirect one	
+117.5	    STAGE3 - Bindings check done	
+117.6	    STAGE4 - A: Delete + Re-create static-rt X/26 done	
+117.7	    STAGE4 - Bindings check done	
+117.8	    STAGE5 - A: Shut aggPrefix	
+117.9	    STAGE5 - A: Local aggPrefFecs cleanup - done	
+117.10	    STAGE5 - A: Remote aggPrefFecs from F cleanup - done	
+117.11	    STAGE5 - Bindings check done	
+117.12	    STAGE6 - A: noShut aggPrefix	
+117.13	    STAGE6 - Bindings check done	
+117.14	    STAGE7 - A: LDP instance shut/noShut done	
+117.15	    STAGE8 - A: LDP instance ipv4 clear - done	
+117.16	    STAGE9 - F System Interface flapping done	
+118	aggPrefix_test3_isis	
+2m 48s	2m 36s	
+118.1	    STAGE1 - BedSetup + Binding check - done	
+118.2	    STAGE2 - Create aggPref_F static-fecs - done	
+118.3	    STAGE2 - Bindings check done	
+118.4	    STAGE3 - E: Added static-rt indirect D for X5/32	
+118.5	    STAGE3 - Bindings check done	
+119	aggPrefix_test3_ecmp_isis	
+3m 39s	2m 40s	
+119.1	    STAGE1 - BedSetup + Binding check - done	
+119.2	    STAGE2 - Create aggPref_F static-fecs - done	
+119.3	    STAGE2 - Bindings check done	
+119.4	    STAGE3 - E: Added static-rt indirect D for X5/32	
+119.5	    STAGE3 - Bindings check done	
+120	aggPrefix_test4_isis	
+2m 35s	2m 26s	
+120.1	    STAGE1 - BedSetup + Binding check - done	
+120.2	    STAGE2 - Create aggPref_F static-fecs - done	
+120.3	    STAGE2 - Bindings check done	
+120.4	    STAGE3 - A: Replaced indirect to F static-rt from /8 to /26	
+120.5	    STAGE3 - Bindings check done	
+121	aggPrefix_test4_ecmp_isis	
+3m 30s	2m 37s	
+121.1	    STAGE1 - BedSetup + Binding check - done	
+121.2	    STAGE2 - Create aggPref_F static-fecs - done	
+121.3	    STAGE2 - Bindings check done	
+121.4	    STAGE3 - A: Replaced indirect to F static-rt from /8 to /26	
+121.5	    STAGE3 - Bindings check done	
+122	aggPrefix_test5_ldpShut_isis	
+2m 43s	2m 34s	
+122.1	    STAGE1 - BedSetup + Binding check - done	
+122.2	    STAGE2 - LDP shut Done	
+122.3	    STAGE2 - Create aggPref_F static-fecs - done	
+122.4	    STAGE2 - LDP noShut Done	
+122.5	    STAGE2 - Bindings check done	
+123	aggPrefix_test5_IGP_Shut_isis	
+2m 52s	2m 42s	
+123.1	    STAGE1 - BedSetup + Binding check - done	
+123.2	    STAGE2 - ISIS shut Done	
+123.3	    STAGE2 - Create aggPref_F static-fecs - done	
+123.4	    STAGE2 - ISIS noShut Done	
+123.5	    STAGE2 - Bindings check done	
+124	aggPrefix_test6_isis	
+6m 44s	6m 23s	
+124.1	    STAGE1 - BedSetup + Binding check - done	
+124.2	    STAGE2 - Create static-fecs - done	
+124.3	    STAGE2 - AggPrefixFecs=[X/24 X/26 X/28] check - done	
+124.4	    STAGE3 - evt=[BOUNCE_PORT] - done	
+124.5	    STAGE3 - evt=[BOUNCE_RTR_IF] - done	
+124.6	    STAGE3 - evt=[BOUNCE_LDP_IF] - done	
+124.7	    STAGE3 - evt=[BOUNCE_LDP_SUB_IF] - done	
+124.8	    STAGE3 - All Events=[BOUNCE_PORT BOUNCE_RTR_IF BOUNCE_LDP_IF BOUNCE_LDP_SUB_IF] - done	
+125	aggPrefix_test6_HA_isis	
+6m 57s	5m 48s	
+125.1	    STAGE1 - BedSetup + Binding check - done	
+125.2	    STAGE2 - Create static-fecs - done	
+125.3	    STAGE2 - AggPrefixFecs=[X/24 X/26 X/28] check - done	
+125.4	    STAGE3 - evt=[BOUNCE_PORT] - done	
+125.5	    STAGE3 - evt=[BOUNCE_RTR_IF] - done	
+125.6	    STAGE3 - evt=[BOUNCE_LDP_IF] - done	
+125.7	    STAGE3 - evt=[BOUNCE_LDP_SUB_IF] - done	
+125.8	    STAGE3 - All Events=[BOUNCE_PORT BOUNCE_RTR_IF BOUNCE_LDP_IF BOUNCE_LDP_SUB_IF] - done	
+126	aggPrefix_test7_isis	
+3m 51s	3m 33s	
+126.1	    STAGE1 - LOR Binding check after setup - done	
+126.2	    STAGE1 - BedSetup - done	
+126.3	    STAGE2 - Create static-fecs - done	
+126.4	    STAGE3 - !LOR Binding check after disabling tunn-in-tunn - done	
+126.5	    STAGE4 - LOR Binding check after disabling tunn-in-tunn - done	
+127	aggPrefix_test7_ecmp_isis	
+4m 43s	3m 39s	
+127.1	    STAGE1 - LOR Binding check after setup - done	
+127.2	    STAGE1 - BedSetup - done	
+127.3	    STAGE2 - Create static-fecs - done	
+127.4	    STAGE3 - !LOR Binding check after disabling tunn-in-tunn - done	
+127.5	    STAGE4 - LOR Binding check after disabling tunn-in-tunn - done	
+128	aggPrefix_test8_isis	
+2m 38s	1m 51s	
+128.1	    STAGE1 - BedSetup + Binding check - done	
+129	SuiteCleanup::LdpBasic_SA_AggPref_isis	
+22s	14s	
+Suite	LdpShortcuts		01:53:24	00:41:30	FAILED
+130	ldpShortcuts_LOR_1_mask_not_eq_to_32	
+4m 31s	aborted	ERROR: |02:19:23 +00:00.000| ldp_checkAndCompRtmRoutes[A]: [ldp] routes not active for given route[16.16.16.0/24] - ldpRouteList=[ospf] - op=[{10.10.1.2 ospf active_true 150 1 60}]
+masterlog.html
+ test_console.60.html
+131	ldpShortcuts_LOR_2_mask_not_eq_to_32	
+4m 30s	aborted	ERROR: |02:34:23 +00:00.000| ldp_checkAndCompRtmRoutes[A]: [ldp] routes not active for given route[16.16.16.0/24] - ldpRouteList=[ospf] - op=[{10.10.1.2 ospf active_true 150 1 62}]
+masterlog.html
+ test_console.61.html
+132	ldpShortcuts_AggPrefix	
+4m 30s	aborted	ERROR: |02:49:02 +00:00.000| ldp_checkAndCompRtmRoutes[A]: [ldp] routes not active for given route[16.16.16.0/24] - ldpRouteList=[ospf] - op=[{10.10.1.2 ospf active_true 150 1 42}]
+masterlog.html
+ test_console.62.html
+133	ldpShortcuts_AggPrefix_1_ipv4	Test Console Log	Masterlog	4m 30s		
+134	ldpShortcuts_staticRoute	Test Console Log	Masterlog	8m 11s		
+135	ldpShortcuts_AllIgp	Test Console Log	Masterlog	10m 47s		
+136	ldpShortcuts_igpLdpSync	Test Console Log	Masterlog	11m 0s		
+137	ldpShortcuts_igpLdpSync_oneHop	Test Console Log	Masterlog	11m 10s		
+138	ldpShortcuts_protoShut	Test Console Log	Masterlog	11m 10s		
+139	ldpShortcuts_protoShut_HA	Test Console Log	Masterlog	13m 12s		
+140	ldpShortcuts_protoShutLdp	Test Console Log	Masterlog	10m 26s		
+141	ldpShortcuts_IgpSC	Test Console Log	Masterlog	6m 20s		
+142	ldp_ShortcutsEcmp_Fragmentation	Test Console Log	Masterlog	12m 45s		
+143	SuiteCleanup::LdpShortcuts	
+22s	15s	
+Suite	LdpShortcuts_isis		02:00:39	00:44:47	FAILED
+144	ldpShortcuts_Basic_isis	
+9m 7s	aborted	ERROR: |03:00:47 +00:00.000| ldp_checkAndCompRtmRoutes[A]: [ldp] routes not active for given route[16.16.16.0/24] - ldpRouteList=[isis] - op=[{10.10.1.2 isis active_true 15 31 62}]
+masterlog.html
+ test_console.62.html
+145	ldpShortcuts_Basic_isis_HA	
+9m 24s	aborted	ERROR: |03:15:40 +00:00.000| ldp_checkAndCompRtmRoutes[A]: [ldp] routes not active for given route[16.16.16.0/24] - ldpRouteList=[isis] - op=[{10.10.1.2 isis active_true 15 31 63}]
+masterlog.html
+ test_console.63.html
+146	ldpShortcuts_linkFail_ingress_isis	
+7m 56s	aborted	ERROR: |03:30:21 +00:00.000| ldp_checkAndCompRtmRoutes[A]: [ldp] routes not active for given route[16.16.16.0/24] - ldpRouteList=[isis] - op=[{10.10.1.2 isis active_true 15 3001 47}]
+masterlog.html
+ test_console.64.html
+147	ldpShortcuts_linkFail_ingress_HA_isis	Test Console Log	Masterlog	15m 19s		
+148	ldpShortcuts_linkFail_transit_isis	Test Console Log	Masterlog	15m 38s		
+149	ldpShortcuts_linkFail_transit_ecmp_isis	Test Console Log	Masterlog	17m 16s		
+150	ldpShortcuts_linkFail_egress_isis	Test Console Log	Masterlog	15m 29s		
+151	ldpShortcuts_LOR_1_isis	Test Console Log	Masterlog	9m 42s		
+152	ldpShortcuts_LOR_2_isis	Test Console Log	Masterlog	9m 40s		
+153	ldpShortcuts_Ecmp_isis	Test Console Log	Masterlog	9m 40s		
+154	SuiteCleanup::LdpShortcuts_isis	
+1m 28s	14s	
+Suite	Ldp_Ttl_Propagation_v4		00:08:23	00:05:41	FAILED
+155	ldp_ttl_propagation_isis1_ipv4	
+8s	1m 9s	ERROR: |03:44:52 +00:00.001| 06/07/2021 - 03:44:52: sendCliCommand exit all & or config router no ldp-shortcut failed on Dut-A
+masterlog.html
+ test_console.65.html
+155.1	    STAGE1-ldp_ttl_propagation_isis1_ipv4:	
+156	ldp_ttl_propagation_ospf_ipv4	
+10s	1m 30s	ERROR: |03:44:55 +00:01.780| checkLdpClean[6Node]: A: Not clean - [SockId: ] found in [ldpSocketMap_Trace] - op=shell ldpSocketMap_Trace
+masterlog.html
+ ESR.A.CPM.A.html
+ ESR.B.CPM.A.html
+ ESR.C.CPM.A.html
+ ESR.D.CPM.A.html
+ ESR.E.CPM.A.html
+ ESR.F.CPM.A.html
+ test_console.65.html
+157	ldp_ttl_propagation_isis_ipv4_LOR	
+8s	1m 18s	ERROR: |03:47:40 +00:00.001| 06/07/2021 - 03:47:40: sendCliCommand exit all & or config router no ldp-shortcut failed on Dut-A
+masterlog.html
+ test_console.65.html
+157.1	    STAGE1-ldp_ttl_propagation_isis_ipv4_LOR:	
+158	ldp_ttl_propagation_ospf_ipv4_LOR	
+1m 29s	1m 30s	ERROR: |03:47:44 +00:01.772| checkLdpClean[6Node]: A: Not clean - [SockId: ] found in [ldpSocketMap_Trace] - op=shell ldpSocketMap_Trace
+masterlog.html
+ ESR.A.CPM.A.html
+ ESR.B.CPM.A.html
+ ESR.C.CPM.A.html
+ ESR.D.CPM.A.html
+ ESR.E.CPM.A.html
+ ESR.F.CPM.A.html
+ test_console.65.html
+159	SuiteCleanup::Ldp_Ttl_Propagation_v4	
+6m 28s	14s	
+Suite	ldp_igpShortcuts		06:13:26	00:11:38	FAILED
+160	ldp_igpShortcuts_1_isis_mi	
+2m 4s	1m 3s	ERROR: |03:50:11 +00:00.047| 06/07/2021 - 03:50:11: deconfigureLdpTestBed[6Node]: A: MPLS Instance Admin Shut failed - op=ERROR
+masterlog.html
+masterlog.html
+ test_console.66.html
+161	ldp_igpShrtct_2_isis_RelMetric	
+5m 55s	1m 5s	ERROR: |03:51:13 +00:00.002| ldp_shutdownRouterInterface: ::Dut-E - interfaceNameToIfIndex[ip-10.10.11.5] failed
+masterlog.html
+masterlog.html
+ test_console.66.html
+162	ldp_igpShortcuts_3_isis_mi	
+2m 14s	1m 4s	ERROR: |03:52:18 +00:00.002| ldp_shutdownRouterInterface: ::Dut-E - interfaceNameToIfIndex[ip-10.10.11.5] failed
+masterlog.html
+masterlog.html
+ test_console.67.html
+163	ldp_igpShrtct_3_isis_RelMetric	
+2m 13s	1m 5s	ERROR: |03:53:22 +00:00.002| ldp_shutdownRouterInterface: ::Dut-E - interfaceNameToIfIndex[ip-10.10.11.5] failed
+masterlog.html
+masterlog.html
+ test_console.67.html
+164	ldp_igpShortcuts_4_isis	
+2m 18s	1m 28s	ERROR: |03:54:51 +00:00.002| ldp_shutdownRouterInterface: ::Dut-E - interfaceNameToIfIndex[ip-10.10.11.5] failed
+masterlog.html
+masterlog.html
+ test_console.68.html
+165	ldp_igpShrtct_1_ospf_RelMetric	
+2m 8s	1m 8s	ERROR: |03:55:53 +00:00.046| 06/07/2021 - 03:55:53: deconfigureLdpTestBed[6Node]: A: MPLS Instance Admin Shut failed - op=ERROR
+masterlog.html
+masterlog.html
+ test_console.68.html
+166	ldp_igpShortcuts_2_ospf	
+6m 5s	1m 9s	ERROR: |03:57:01 +00:00.003| ldp_shutdownRouterInterface: ::Dut-E - interfaceNameToIfIndex[ip-10.10.11.5] failed
+masterlog.html
+masterlog.html
+ test_console.69.html
+167	ldp_igpShortcuts_3_ospf_mi	
+2m 22s	1m 10s	ERROR: |03:58:10 +00:00.002| ldp_shutdownRouterInterface: ::Dut-E - interfaceNameToIfIndex[ip-10.10.11.5] failed
+masterlog.html
+masterlog.html
+ test_console.69.html
+168	ldp_igpShrtct_3_ospf_RelMetric	
+2m 22s	1m 9s	ERROR: |03:59:20 +00:00.002| ldp_shutdownRouterInterface: ::Dut-E - interfaceNameToIfIndex[ip-10.10.11.5] failed
+masterlog.html
+masterlog.html
+ test_console.70.html
+169	ldp_igpSCRelMetric_1_isis	
+3m 52s	1m 3s	ERROR: |04:00:31 +00:00.048| 06/07/2021 - 04:00:31: deconfigureLdpTestBed[6Node]: A: MPLS Instance Admin Shut failed - op=ERROR
+masterlog.html
+masterlog.html
+ test_console.70.html
+170	ldp_igpSCRelMetric_2_ospf	Test Console Log	Masterlog	15m 48s		
+171	ldp_igpShrtct_1_isis_RelMetric	Test Console Log	Masterlog	6m 3s		
+172	ldp_igpShortcuts_2_isis	Test Console Log	Masterlog	25m 30s		
+173	ldp_igpShrtct_4_isis_RelMetric	Test Console Log	Masterlog	1h 52m 30s		
+174	ldp_igpShortcuts_1_ospf_mi	Test Console Log	Masterlog	5m 43s		
+175	ldp_igpShrtct_2_ospf_RelMetric	Test Console Log	Masterlog	24m 48s		
+176	ldp_igpShortcuts_4_ospf	Test Console Log	Masterlog	1h 54m 17s		
+177	ldp_igpSCRelMetric_1_ospf	Test Console Log	Masterlog	15m 11s		
+178	ldp_igpSCRelMetric_2_isis	Test Console Log	Masterlog	16m 44s		
+179	ldp_igplsrIdRtrId_isis	Test Console Log	Masterlog	5m 5s		
+180	SuiteCleanup::ldp_igpShortcuts	
+14s	14s	
+Suite	Ldp_staticLor		12:52:17	04:09:49	FAILED
+181	SuiteSetup::Ldp_staticLor	
+49s	42s	
+182	ldp_staticRoute_lor_basic	
+5m 11s	4m 47s	ERROR: |04:02:24 +00:00.095| STAGE1 : ldp_staticRoute_lor_basic: STAGE2 - Dut-C : Invalid LDP Binding FAILED for prefix 16.16.16.0/24 - op=[ERROR]
+masterlog.html
+ test_console.71.html
+183	ldp_staticRoute_lor_StaticLsp	
+7m 45s	6m 49s	ERROR: |04:07:14 +00:00.095| STAGE1 : ldp_staticRoute_lor_StaticLsp: STAGE2 - Dut-C : Invalid LDP Binding FAILED for prefix 16.16.16.0/24 - op=[ERROR]
+masterlog.html
+ test_console.71.html
+184	ldp_staticRoute_lor_TunlAndIndNhop	
+5m 17s	4m 41s	ERROR: |04:14:03 +00:00.100| STAGE1 : ldp_staticRoute_lor_TunlAndIndNhop: STAGE2 - Dut-C : Invalid LDP Binding FAILED for prefix 16.16.16.0/24 - op=[ERROR]
+masterlog.html
+ test_console.72.html
+185	ldp_staticRoute_lor_Ecmp_staticLsp	
+8m 53s	7m 2s	ERROR: |04:18:15 +00:00.502| ldp_sendCliCommandParse:C: sendCliCommand [configure system load-balancing lsr-load-balancing lbl-only] failed. -- bailing out after 3 attempts - cmdResult=[
+masterlog.html
+ test_console.72.html
+186	ldp_staticRoute_lor_Ecmp_DynLsp	
+8m 9s	7m 0s	ERROR: |04:25:18 +00:00.501| ldp_sendCliCommandParse:C: sendCliCommand [configure system load-balancing lsr-load-balancing lbl-only] failed. -- bailing out after 3 attempts - cmdResult=[
+masterlog.html
+ test_console.73.html
+187	ldp_staticRoute_lor_IndirectEcmp_statLsp	
+17m 51s	13m 12s	ERROR: |04:32:18 +00:00.502| ldp_sendCliCommandParse:C: sendCliCommand [configure system load-balancing lsr-load-balancing lbl-only] failed. -- bailing out after 3 attempts - cmdResult=[
+masterlog.html
+ test_console.74.html
+188	ldp_staticRoute_lor_IndirectEcmp_DynLsp	
+16m 42s	13m 13s	ERROR: |04:45:29 +00:00.502| ldp_sendCliCommandParse:C: sendCliCommand [configure system load-balancing lsr-load-balancing lbl-only] failed. -- bailing out after 3 attempts - cmdResult=[
+masterlog.html
+ test_console.75.html
+189	ldp_staticRoute_lor_MaxIndirectEcmp_statLsp	
+2h 18m 0s	1h 28m 48s	ERROR: |04:58:43 +00:00.501| ldp_sendCliCommandParse:C: sendCliCommand [configure system load-balancing lsr-load-balancing lbl-only] failed. -- bailing out after 3 attempts - cmdResult=[
+masterlog.html
+ test_console.76.html
+190	ldp_staticRoute_lor_MaxIndirectEcmp_DynLsp	
+2h 20m 0s	1h 28m 46s	ERROR: |06:27:32 +00:00.501| ldp_sendCliCommandParse:C: sendCliCommand [configure system load-balancing lsr-load-balancing lbl-only] failed. -- bailing out after 3 attempts - cmdResult=[
+masterlog.html
+ test_console.77.html
+191	ldp_staticRoute_lor_MixTunlTypes	
+2h 20m 0s	aborted	ERROR: |07:56:16 +00:00.002| ldp_staticRoute_lor_MixTunlTypes: STAGE1 - Dut-C: setVRtrEcmpMaxRoutes [1, 2] is FAILING - op=inconsistentValue
+masterlog.html
+ test_console.78.html
+192	ldp_staticRoute_lor_IgpShortcut	Test Console Log	Masterlog	2m 37s		
+193	ldp_staticRoute_lor_cbf_igpSC_diffTunlEnd	Test Console Log	Masterlog	24m 55s		
+194	ldp_staticRoute_lor_cbf_igpSC_SameTunlEnd	Test Console Log	Masterlog	26m 41s		
+195	ldp_staticRoute_lor_cbf_diffTunlEnd	Test Console Log	Masterlog	24m 54s		
+196	ldp_staticRoute_lor_cbf_sameTunlEnd	Test Console Log	Masterlog	26m 34s		
+197	ldp_staticRoute_lor_wecmp_igpSC	Test Console Log	Masterlog	37m 56s		
+198	ldp_staticRoute_lor_wecmp_DiffTunlEnd	Test Console Log	Masterlog	22m 10s		
+199	ldp_staticRoute_lor_wecmp_SameTunlEnd	Test Console Log	Masterlog	20m 35s		
+200	ldp_staticRoute_lor_wecmp_cbf_SameTunlEnd	Test Console Log	Masterlog	23m 34s		
+201	ldp_staticRoute_lor_scaling_clrLsps	Test Console Log	Masterlog	7m 32s		
+202	ldp_staticRoute_lor_scaling_clrLdp	Test Console Log	Masterlog	8m 3s		
+203	ldp_staticRoute_lor_scaling_toggleLdp	Test Console Log	Masterlog	7m 37s		
+204	ldp_staticRoute_lor_scaling_toggleMpls	Test Console Log	Masterlog	7m 58s		
+205	ldp_staticRoute_lor_scaling_ipIntflap	Test Console Log	Masterlog	8m 25s		
+206	ldp_staticRoute_lor_scaling_clearCard	Test Console Log	Masterlog	8m 37s		
+207	ldp_staticRoute_lor_scaling_clearCardSoft	Test Console Log	Masterlog	9m 26s		
+208	ldp_staticRoute_lor_scaling_cbfDelRestore	Test Console Log	Masterlog	7m 14s		
+209	ldp_staticRoute_lor_scaling_weightsDelRestore	Test Console Log	Masterlog	7m 55s		
+210	SuiteCleanup::Ldp_staticLor	
+57s	58s

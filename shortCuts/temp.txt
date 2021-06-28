@@ -1,0 +1,174 @@
+Suite	LdpOverRsvp		00:28:48	00:21:52	PASSED
+14	SuiteSetup::LdpOverRsvp	
+44s	43s	
+15	ldp_over_rsvp_tc_1	
+15s	16s	
+16	ldp_over_rsvp_tc_2	
+1m 4s	1m 6s	
+17	ldp_over_rsvp_tc_3	
+22s	24s	
+18	ldp_over_rsvp_tc_4	
+20s	22s	
+19	ldp_over_rsvp_tc_5	
+1m 7s	1m 7s	
+20	ldp_over_rsvp_tc_6	
+24s	26s	
+21	ldp_over_rsvp_tc_7	
+23s	23s	
+22	ldp_over_rsvp_tc_8	
+3m 1s	2m 54s	
+23	ldp_over_rsvp_tc_9	
+29s	30s	
+24	ldp_over_rsvp_tc_10	
+1m 36s	1m 37s	
+25	ldp_over_rsvp_tc_11	
+11m 34s	3m 25s	
+26	ldp_over_rsvp_tc_12	
+1m 34s	1m 35s	
+27	ldp_over_rsvp_tc_13	
+1m 24s	1m 30s	
+28	ldp_over_rsvp_tc_14	
+2m 15s	2m 19s	
+29	ldp_over_rsvp_tc_15	
+2m 16s	2m 18s	
+30	SuiteCleanup::LdpOverRsvp	
+unknown	57s	
+Suite	LOR_Ecmp_MA		00:16:19	00:20:47	FAILED
+31	LOR_Ecmp_MA_1	
+4m 24s	8m 36s	ERROR: |12:22:32 +00:00.000| ldp_bhchecklsp[A_E_4]: FAILED after [6] retries
+masterlog.html
+ test_console.4.html
+31.1	    STAGE1 - Lsps creation	
+ERROR: |12:22:32 +00:00.000| ldp_bhchecklsp[A_E_4]: FAILED after [6] retries
+test_console.4.html
+32	LOR_Ecmp_MA_autoTldpLsp_1	
+11m 55s	11m 53s	ERROR: |12:31:27 +00:00.001| No of lsp's expected is not the same in vRtrMplsLspName table
+masterlog.html
+ test_console.5.html
+32.1	    STAGE1 - Lsps creation	
+ERROR: |12:31:27 +00:00.001| No of lsp's expected is not the same in vRtrMplsLspName table
+test_console.5.html
+33	SuiteCleanup::LOR_Ecmp_MA	
+unknown	18s	
+Suite	LdpOverRsvp_isis		00:19:58	00:15:30	passing...
+34	SuiteSetup::LdpOverRsvp_isis	
+unknown	1m 19s	
+35	ldp_over_rsvp_Isis_tc_1	
+14s	16s	
+36	ldp_over_rsvp_Isis_tc_2	
+1m 4s	1m 6s	
+37	ldp_over_rsvp_Isis_tc_3	
+23s	24s	
+38	ldp_over_rsvp_Isis_tc_4	
+20s	22s	
+39	ldp_over_rsvp_Isis_tc_5	
+1m 7s	1m 7s	
+40	ldp_over_rsvp_Isis_tc_6	
+24s	26s	
+41	ldp_over_rsvp_Isis_tc_7	
+22s	24s	
+42	ldp_over_rsvp_Isis_tc_8	
+3m 2s	2m 54s	
+43	ldp_over_rsvp_Isis_tc_9	
+29s	30s	
+44	ldp_over_rsvp_Isis_tc_10	
+1m 36s	1m 37s	
+45	ldp_over_rsvp_Isis_tc_11	
+3m 25s	3m 30s	
+46	ldp_over_rsvp_Isis_tc_12	
+1m 34s	1m 35s	
+*	ldp_over_rsvp_Isis_tc_13	
+1m 28s	1m 18s	
+48	ldp_over_rsvp_Isis_tc_14	Test Console Log	Masterlog	2m 14s		
+49	ldp_over_rsvp_Isis_tc_15	Test Console Log	Masterlog	2m 16s		
+50	SuiteCleanup::LdpOverRsvp_isis	Test Console Log	Masterlog	unknown		
+Suite	LdpShortcuts		02:12:46	00:00:00	pending...
+51	ldpShortcuts_LOR_1_mask_not_eq_to_32	Test Console Log	Masterlog	7m 5s		
+52	ldpShortcuts_LOR_2_mask_not_eq_to_32	Test Console Log	Masterlog	9m 44s		
+53	ldpShortcuts_AggPrefix	Test Console Log	Masterlog	21m 13s		
+54	ldpShortcuts_AggPrefix_1_ipv4	Test Console Log	Masterlog	4m 52s		
+55	ldpShortcuts_staticRoute	Test Console Log	Masterlog	9m 20s		
+56	ldpShortcuts_AllIgp	Test Console Log	Masterlog	17m 43s		
+57	ldpShortcuts_igpLdpSync	Test Console Log	Masterlog	6m 12s		
+58	ldpShortcuts_igpLdpSync_oneHop	Test Console Log	Masterlog	6m 19s		
+59	ldpShortcuts_protoShut	Test Console Log	Masterlog	10m 56s		
+60	ldpShortcuts_protoShut_HA	Test Console Log	Masterlog	14m 12s		
+61	ldpShortcuts_protoShutLdp	Test Console Log	Masterlog	12m 27s		
+62	ldpShortcuts_IgpSC	Test Console Log	Masterlog	5m 58s		
+63	ldp_ShortcutsEcmp_Fragmentation	Test Console Log	Masterlog	5m 58s		
+64	SuiteCleanup::LdpShortcuts	Test Console Log	Masterlog	47s		
+Suite	LdpShortcuts_isis		02:22:57	00:00:00	pending...
+65	ldpShortcuts_Basic_isis	Test Console Log	Masterlog	15m 59s		
+66	ldpShortcuts_Basic_isis_HA	Test Console Log	Masterlog	18m 34s		
+67	ldpShortcuts_linkFail_ingress_isis	Test Console Log	Masterlog	14m 26s		
+68	ldpShortcuts_linkFail_ingress_HA_isis	Test Console Log	Masterlog	15m 40s		
+69	ldpShortcuts_linkFail_transit_isis	Test Console Log	Masterlog	14m 43s		
+70	ldpShortcuts_linkFail_transit_ecmp_isis	Test Console Log	Masterlog	14m 46s		
+71	ldpShortcuts_linkFail_egress_isis	Test Console Log	Masterlog	14m 38s		
+72	ldpShortcuts_LOR_1_isis	Test Console Log	Masterlog	9m 59s		
+73	ldpShortcuts_LOR_2_isis	Test Console Log	Masterlog	9m 50s		
+74	ldpShortcuts_Ecmp_isis	Test Console Log	Masterlog	14m 22s		
+75	SuiteCleanup::LdpShortcuts_isis	Test Console Log	Masterlog	unknown		
+Suite	Ldp_Ttl_Propagation_v4		00:39:24	00:00:00	pending...
+76	ldp_ttl_propagation_isis1_ipv4	Test Console Log	Masterlog	9m 39s		
+77	ldp_ttl_propagation_ospf_ipv4	Test Console Log	Masterlog	9m 49s		
+78	ldp_ttl_propagation_isis_ipv4_LOR	Test Console Log	Masterlog	9m 51s		
+79	ldp_ttl_propagation_ospf_ipv4_LOR	Test Console Log	Masterlog	10m 5s		
+80	SuiteCleanup::Ldp_Ttl_Propagation_v4	Test Console Log	Masterlog	unknown		
+Suite	ldp_igpShortcuts		08:54:22	00:00:00	pending...
+81	ldp_igpShortcuts_1_isis_mi	Test Console Log	Masterlog	5m 28s		
+82	ldp_igpShrtct_2_isis_RelMetric	Test Console Log	Masterlog	25m 23s		
+83	ldp_igpShortcuts_3_isis_mi	Test Console Log	Masterlog	5m 13s		
+84	ldp_igpShrtct_3_isis_RelMetric	Test Console Log	Masterlog	5m 9s		
+85	ldp_igpShortcuts_4_isis	Test Console Log	Masterlog	1h 45m 20s		
+86	ldp_igpShrtct_1_ospf_RelMetric	Test Console Log	Masterlog	5m 40s		
+87	ldp_igpShortcuts_2_ospf	Test Console Log	Masterlog	25m 43s		
+88	ldp_igpShortcuts_3_ospf_mi	Test Console Log	Masterlog	5m 35s		
+89	ldp_igpShrtct_3_ospf_RelMetric	Test Console Log	Masterlog	5m 32s		
+90	ldp_igpSCRelMetric_1_isis	Test Console Log	Masterlog	15m 33s		
+91	ldp_igpSCRelMetric_2_ospf	Test Console Log	Masterlog	17m 58s		
+92	ldp_igpShrtct_1_isis_RelMetric	Test Console Log	Masterlog	5m 23s		
+93	ldp_igpShortcuts_2_isis	Test Console Log	Masterlog	25m 42s		
+94	ldp_igpShrtct_4_isis_RelMetric	Test Console Log	Masterlog	1h 44m 49s		
+95	ldp_igpShortcuts_1_ospf_mi	Test Console Log	Masterlog	5m 43s		
+96	ldp_igpShrtct_2_ospf_RelMetric	Test Console Log	Masterlog	25m 47s		
+97	ldp_igpShortcuts_4_ospf	Test Console Log	Masterlog	1h 46m 3s		
+98	ldp_igpSCRelMetric_1_ospf	Test Console Log	Masterlog	15m 56s		
+99	ldp_igpSCRelMetric_2_isis	Test Console Log	Masterlog	17m 20s		
+100	ldp_igplsrIdRtrId_isis	Test Console Log	Masterlog	5m 5s		
+101	SuiteCleanup::ldp_igpShortcuts	Test Console Log	Masterlog	unknown		
+Suite	Ldp_staticLor		05:59:30	00:00:00	pending...
+102	SuiteSetup::Ldp_staticLor	Test Console Log	Masterlog	unknown		
+103	ldp_staticRoute_lor_basic	Test Console Log	Masterlog	2m 25s		
+104	ldp_staticRoute_lor_StaticLsp	Test Console Log	Masterlog	4m 16s		
+105	ldp_staticRoute_lor_TunlAndIndNhop	Test Console Log	Masterlog	3m 16s		
+106	ldp_staticRoute_lor_Ecmp_staticLsp	Test Console Log	Masterlog	8m 5s		
+107	ldp_staticRoute_lor_Ecmp_DynLsp	Test Console Log	Masterlog	7m 43s		
+108	ldp_staticRoute_lor_IndirectEcmp_statLsp	Test Console Log	Masterlog	9m 57s		
+109	ldp_staticRoute_lor_IndirectEcmp_DynLsp	Test Console Log	Masterlog	12m 58s		
+110	ldp_staticRoute_lor_MaxIndirectEcmp_statLsp	Test Console Log	Masterlog	9m 9s		
+111	ldp_staticRoute_lor_MaxIndirectEcmp_DynLsp	Test Console Log	Masterlog	11m 44s		
+112	ldp_staticRoute_lor_MixTunlTypes	Test Console Log	Masterlog	2m 57s		
+113	ldp_staticRoute_lor_IgpShortcut	Test Console Log	Masterlog	2m 37s		
+114	ldp_staticRoute_lor_cbf_igpSC_diffTunlEnd	Test Console Log	Masterlog	25m 29s		
+115	ldp_staticRoute_lor_cbf_igpSC_SameTunlEnd	Test Console Log	Masterlog	27m 33s		
+116	ldp_staticRoute_lor_cbf_diffTunlEnd	Test Console Log	Masterlog	26m 4s		
+117	ldp_staticRoute_lor_cbf_sameTunlEnd	Test Console Log	Masterlog	28m 19s		
+118	ldp_staticRoute_lor_wecmp_igpSC	Test Console Log	Masterlog	37m 56s		
+119	ldp_staticRoute_lor_wecmp_DiffTunlEnd	Test Console Log	Masterlog	22m 10s		
+120	ldp_staticRoute_lor_wecmp_SameTunlEnd	Test Console Log	Masterlog	20m 35s		
+121	ldp_staticRoute_lor_wecmp_cbf_SameTunlEnd	Test Console Log	Masterlog	23m 34s		
+122	ldp_staticRoute_lor_scaling_clrLsps	Test Console Log	Masterlog	7m 40s		
+123	ldp_staticRoute_lor_scaling_clrLdp	Test Console Log	Masterlog	7m 50s		
+124	ldp_staticRoute_lor_scaling_toggleLdp	Test Console Log	Masterlog	8m 1s		
+125	ldp_staticRoute_lor_scaling_toggleMpls	Test Console Log	Masterlog	7m 53s		
+126	ldp_staticRoute_lor_scaling_ipIntflap	Test Console Log	Masterlog	8m 22s		
+127	ldp_staticRoute_lor_scaling_clearCard	Test Console Log	Masterlog	9m 9s		
+128	ldp_staticRoute_lor_scaling_clearCardSoft	Test Console Log	Masterlog	8m 49s		
+129	ldp_staticRoute_lor_scaling_cbfDelRestore	Test Console Log	Masterlog	7m 28s		
+130	ldp_staticRoute_lor_scaling_weightsDelRestore	Test Console Log	Masterlog	7m 31s		
+131	SuiteCleanup::Ldp_staticLor	Test Console Log	Masterlog	unknown		
+Suite	Ldp_DoD		00:35:35	00:00:00	pending...
+132	ldpDoD_1_epipe_OSPF	Test Console Log	Masterlog	16m 10s		
+133	ldpDoD_2_vprn_ISISwm_auto	Test Console Log	Masterlog	10m 16s		
+134	ldpDoD_3_vpls_OSPF1_impl	Test Console Log	Masterlog	9m 9s

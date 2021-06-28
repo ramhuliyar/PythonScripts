@@ -1,0 +1,409 @@
+Suite	srTeDataPathMaxLabel_ospf		03:30:04	00:32:30	passing...
+14	SuiteSetup::srTeDataPathMaxLabel_ospf	
+6m 36s	52s	
+15	srTe_1Label_Epipe_dataPathCheck	
+2m 36s	2m 33s	
+16	srTe_2Label_Epipe_dataPathCheck	
+2m 38s	2m 33s	
+17	srTe_3Label_Epipe_dataPathCheck	
+2m 41s	2m 33s	
+18	srTe_4Label_Epipe_dataPathCheck	
+3m 6s	2m 51s	
+19	srTe_5Label_Epipe_dataPathCheck	
+3m 0s	3m 6s	
+20	srTe_6Label_Epipe_dataPathCheck	
+3m 1s	2m 50s	
+21	srTe_7Label_Epipe_dataPathCheck	
+3m 1s	2m 31s	
+22	srTe_8Label_Epipe_dataPathCheck	
+2m 40s	2m 32s	
+23	srTe_1Label_EpipeCtrlWrd_dataPathCheck	
+2m 35s	2m 31s	
+24	srTe_2Label_EpipeCtrlWrd_dataPathCheck	
+2m 38s	2m 32s	
+25	srTe_3Label_EpipeCtrlWrd_dataPathCheck	
+2m 42s	2m 31s	
+26	srTe_4Label_EpipeCtrlWrd_dataPathCheck	
+2m 59s	2m 34s	
+*	srTe_5Label_EpipeCtrlWrd_dataPathCheck	
+3m 12s	2m 6s	
+28	srTe_6Label_EpipeCtrlWrd_dataPathCheck	Test Console Log	Masterlog	3m 6s		
+29	srTe_7Label_EpipeCtrlWrd_dataPathCheck	Test Console Log	Masterlog	3m 5s		
+30	srTe_8Label_EpipeCtrlWrd_dataPathCheck	Test Console Log	Masterlog	2m 40s		
+31	srTe_1Label_Vprn_dataPathCheck	Test Console Log	Masterlog	3m 14s		
+32	srTe_2Label_Vprn_dataPathCheck	Test Console Log	Masterlog	3m 17s		
+33	srTe_3Label_Vprn_dataPathCheck	Test Console Log	Masterlog	3m 16s		
+34	srTe_4Label_Vprn_dataPathCheck	Test Console Log	Masterlog	3m 16s		
+35	srTe_5Label_Vprn_dataPathCheck	Test Console Log	Masterlog	3m 18s		
+36	srTe_6Label_Vprn_dataPathCheck	Test Console Log	Masterlog	3m 24s		
+37	srTe_7Label_Vprn_dataPathCheck	Test Console Log	Masterlog	3m 22s		
+38	srTe_8Label_Vprn_dataPathCheck	Test Console Log	Masterlog	3m 6s		
+39	srTe_1Label_Epipe_Entropy_dataPathCheck	Test Console Log	Masterlog	2m 36s		
+40	srTe_2Label_Epipe_Entropy_dataPathCheck	Test Console Log	Masterlog	2m 38s		
+41	srTe_3Label_Epipe_Entropy_dataPathCheck	Test Console Log	Masterlog	2m 39s		
+42	srTe_4Label_Epipe_Entropy_dataPathCheck	Test Console Log	Masterlog	3m 3s		
+43	srTe_5Label_Epipe_Entropy_dataPathCheck	Test Console Log	Masterlog	3m 4s		
+44	srTe_6Label_Epipe_Entropy_dataPathCheck	Test Console Log	Masterlog	3m 5s		
+45	srTe_7Label_Epipe_Entropy_dataPathCheck	Test Console Log	Masterlog	3m 5s		
+46	srTe_8Label_Epipe_Entropy_dataPathCheck	Test Console Log	Masterlog	2m 41s		
+47	srTe_1Label_EpipeCtrlWrd_Entropy_dataPathCheck	Test Console Log	Masterlog	2m 36s		
+48	srTe_2Label_EpipeCtrlWrd_Entropy_dataPathCheck	Test Console Log	Masterlog	2m 39s		
+49	srTe_1Label_Vprn_Entropy_dataPathCheck	Test Console Log	Masterlog	3m 13s		
+50	srTe_2Label_Vprn_Entropy_dataPathCheck	Test Console Log	Masterlog	3m 15s		
+51	srTe_3Label_Vprn_Entropy_dataPathCheck	Test Console Log	Masterlog	3m 15s		
+52	srTe_4Label_Vprn_Entropy_dataPathCheck	Test Console Log	Masterlog	3m 16s		
+53	srTe_5Label_Vprn_Entropy_dataPathCheck	Test Console Log	Masterlog	3m 22s		
+54	srTe_6Label_Vprn_Entropy_dataPathCheck	Test Console Log	Masterlog	3m 23s		
+55	srTe_7Label_Vprn_Entropy_dataPathCheck	Test Console Log	Masterlog	3m 27s		
+56	srTe_8Label_Vprn_Entropy_dataPathCheck	Test Console Log	Masterlog	3m 9s		
+57	srTe_7Label_Vprn_MplsGlobalEntropy_dataPathCheck	Test Console Log	Masterlog	3m 27s		
+58	srTe_7Label_Epipe_MplsGlobalEntropy_dataPathCheck	Test Console Log	Masterlog	3m 4s		
+59	srTe_7Label_Vprn_BgpEntropy_dataPathCheck	Test Console Log	Masterlog	3m 26s		
+60	srTe_7Label_Vprn_Bgp_Sr_Entropy_dataPathCheck	Test Console Log	Masterlog	3m 23s		
+61	srTeEpipe_dataPathCheck	Test Console Log	Masterlog	2m 48s		
+62	srTeEpipeCtrlWrd_dataPathCheck	Test Console Log	Masterlog	2m 46s		
+63	srTeVprn_dataPathCheck	Test Console Log	Masterlog	3m 25s		
+64	srTeEpipeRlfa_dataPathCheck	Test Console Log	Masterlog	3m 35s		
+65	srTeEpipeRlfa4Label_dataPathCheck	Test Console Log	Masterlog	3m 30s		
+66	srTeEpipeRlfa5Label_dataPathCheck	Test Console Log	Masterlog	3m 41s		
+67	srTeEpipeRlfaCtrlWrd_dataPathCheck	Test Console Log	Masterlog	3m 36s		
+68	srTeVprnRlfa_dataPathCheck	Test Console Log	Masterlog	4m 11s		
+69	srTeVprnRlfa4Label_dataPathCheck	Test Console Log	Masterlog	4m 10s		
+70	srTeVprnRlfa5Label_dataPathCheck	Test Console Log	Masterlog	4m 9s		
+71	srTeEpipeTiLfa_dataPathCheck	Test Console Log	Masterlog	3m 37s		
+72	srTeEpipeTiLfaCtrlWrd__dataPathCheck	Test Console Log	Masterlog	3m 38s		
+73	srTeVprnTiLfa_dataPathCheck	Test Console Log	Masterlog	4m 14s		
+74	srTeEpipeImplicitNull_dataPathCheck	Test Console Log	Masterlog	3m 12s		
+75	srTeEpipeImplicitNullCtrlWrd_dataPathCheck	Test Console Log	Masterlog	2m 43s		
+76	srTeVprnImplicitNull_dataPathCheck	Test Console Log	Masterlog	3m 20s		
+77	SuiteCleanup::srTeDataPathMaxLabel_ospf	Test Console Log	Masterlog	7m 14s		
+Suite	srTe3107DataPathMaxLabel_ospf		03:30:58	00:00:00	pending...
+78	SuiteSetup::srTe3107DataPathMaxLabel_ospf	Test Console Log	Masterlog	5m 35s		
+79	srTe_3107_1LabelCspf_BgpEntropy_Epipe_dataPathCheck	Test Console Log	Masterlog	2m 41s		
+80	srTe_3107_2LabelCspf_BgpEntropy_Epipe_dataPathCheck	Test Console Log	Masterlog	2m 42s		
+81	srTe_3107_3LabelCspf_BgpEntropy_Epipe_dataPathCheck	Test Console Log	Masterlog	2m 46s		
+82	srTe_3107_4LabelCspf_BgpEntropy_Epipe_dataPathCheck	Test Console Log	Masterlog	2m 48s		
+83	srTe_3107_5LabelCspf_BgpEntropy_Epipe_dataPathCheck	Test Console Log	Masterlog	2m 56s		
+84	srTe_3107_1LabelCspf_Vprn_dataPathCheck	Test Console Log	Masterlog	3m 1s		
+85	srTe_3107_2LabelCspf_Vprn_dataPathCheck	Test Console Log	Masterlog	3m 4s		
+86	srTe_3107_3LabelCspf_Vprn_dataPathCheck	Test Console Log	Masterlog	3m 9s		
+87	srTe_3107_4LabelCspf_Vprn_dataPathCheck	Test Console Log	Masterlog	3m 15s		
+88	srTe_3107_5LabelCspf_Vprn_dataPathCheck	Test Console Log	Masterlog	3m 18s		
+89	srTeEpipe3107_dataPathCheck	Test Console Log	Masterlog	3m 8s		
+90	srTeEpipe3107CtrlWrd_dataPathCheck	Test Console Log	Masterlog	3m 13s		
+91	srTeVprn3107_dataPathCheck	Test Console Log	Masterlog	3m 23s		
+92	srTeEpipeRlfa3107_dataPathCheck	Test Console Log	Masterlog	3m 36s		
+93	srTeEpipeRlfa3107CtrlWrd_dataPathCheck	Test Console Log	Masterlog	3m 39s		
+94	srTeVprnRlfa3107_dataPathCheck	Test Console Log	Masterlog	4m 2s		
+95	srTeEpipeTiLfa3107_dataPathCheck	Test Console Log	Masterlog	3m 41s		
+96	srTeEpipeTiLfa3107CtrlWrd_dataPathCheck	Test Console Log	Masterlog	3m 41s		
+97	srTeVprnTiLfa3107_dataPathCheck	Test Console Log	Masterlog	4m 1s		
+98	srTeEpipeRlfaEntropy3107_dataPathCheck	Test Console Log	Masterlog	4m 1s		
+99	srTeVprnRlfaEntropy3107_dataPathCheck	Test Console Log	Masterlog	4m 2s		
+100	srTeEpipeTiLfaEntropy3107_dataPathCheck	Test Console Log	Masterlog	3m 43s		
+101	srTeVprnTiLfaEntropy3107_dataPathCheck	Test Console Log	Masterlog	4m 3s		
+102	srTeEpipeImplicitNull3107_dataPathCheck	Test Console Log	Masterlog	3m 36s		
+103	srTeVprn3107ImplicitNull_dataPathCheck	Test Console Log	Masterlog	3m 14s		
+104	srTeEpipeEntropyImplicitNull3107_dataPathCheck	Test Console Log	Masterlog	3m 0s		
+105	srTeVprnEntropy3107ImplicitNull_dataPathCheck	Test Console Log	Masterlog	3m 17s		
+106	srTe_3107_1Label_Epipe_dataPathCheck	Test Console Log	Masterlog	2m 42s		
+107	srTe_3107_2Label_Epipe_dataPathCheck	Test Console Log	Masterlog	2m 41s		
+108	srTe_3107_3Label_Epipe_dataPathCheck	Test Console Log	Masterlog	2m 48s		
+109	srTe_3107_4Label_Epipe_dataPathCheck	Test Console Log	Masterlog	2m 52s		
+110	srTe_3107_5Label_Epipe_dataPathCheck	Test Console Log	Masterlog	2m 59s		
+111	srTe_3107_6Label_Epipe_dataPathCheck	Test Console Log	Masterlog	3m 14s		
+112	srTe_3107_7Label_Epipe_dataPathCheck	Test Console Log	Masterlog	3m 35s		
+113	srTe_3107_1Label_srTeEntropy_Epipe_dataPathCheck	Test Console Log	Masterlog	2m 39s		
+114	srTe_3107_6Label_srTeEntropy_Epipe_dataPathCheck	Test Console Log	Masterlog	3m 8s		
+115	srTe_3107_1Label_BgpEntropy_Epipe_dataPathCheck	Test Console Log	Masterlog	2m 40s		
+116	srTe_3107_2Label_BgpEntropy_Epipe_dataPathCheck	Test Console Log	Masterlog	2m 42s		
+117	srTe_3107_3Label_BgpEntropy_Epipe_dataPathCheck	Test Console Log	Masterlog	2m 47s		
+118	srTe_3107_4Label_BgpEntropy_Epipe_dataPathCheck	Test Console Log	Masterlog	2m 50s		
+119	srTe_3107_5Label_BgpEntropy_Epipe_dataPathCheck	Test Console Log	Masterlog	2m 57s		
+120	srTe_3107_6Label_BgpEntropy_Epipe_dataPathCheck	Test Console Log	Masterlog	3m 19s		
+121	srTe_3107_7Label_BgpEntropy_Epipe_dataPathCheck	Test Console Log	Masterlog	2m 55s		
+122	srTe_3107_1Label_Epipe_CtrlWrd_dataPathCheck	Test Console Log	Masterlog	2m 39s		
+123	srTe_3107_1Label_BgpEntropy_Epipe_CtrlWrd_dataPathCheck	Test Console Log	Masterlog	2m 37s		
+124	srTe_3107_1Label_srTeEntropy_Epipe_CtrlWrd_dataPathCheck	Test Console Log	Masterlog	2m 40s		
+125	srTe_3107_1Label_Vprn_dataPathCheck	Test Console Log	Masterlog	3m 0s		
+126	srTe_3107_2Label_Vprn_dataPathCheck	Test Console Log	Masterlog	3m 5s		
+127	srTe_3107_3Label_Vprn_dataPathCheck	Test Console Log	Masterlog	3m 11s		
+128	srTe_3107_4Label_Vprn_dataPathCheck	Test Console Log	Masterlog	3m 14s		
+129	srTe_3107_5Label_Vprn_dataPathCheck	Test Console Log	Masterlog	3m 20s		
+130	srTe_3107_6Label_Vprn_dataPathCheck	Test Console Log	Masterlog	3m 26s		
+131	srTe_3107_7Label_Vprn_dataPathCheck	Test Console Log	Masterlog	3m 25s		
+132	srTe_3107_1Label_srTeEntropy_Vprn_dataPathCheck	Test Console Log	Masterlog	3m 1s		
+133	srTe_3107_6Label_srTeEntropy_Vprn_dataPathCheck	Test Console Log	Masterlog	3m 26s		
+134	srTe_3107_1Label_BgpEntropy_Vprn_dataPathCheck	Test Console Log	Masterlog	3m 1s		
+135	srTe_3107_2Label_BgpEntropy_Vprn_dataPathCheck	Test Console Log	Masterlog	3m 5s		
+136	srTe_3107_3Label_BgpEntropy_Vprn_dataPathCheck	Test Console Log	Masterlog	3m 10s		
+137	srTe_3107_4Label_BgpEntropy_Vprn_dataPathCheck	Test Console Log	Masterlog	3m 14s		
+138	srTe_3107_5Label_BgpEntropy_Vprn_dataPathCheck	Test Console Log	Masterlog	3m 19s		
+139	srTe_3107_6Label_BgpEntropy_Vprn_dataPathCheck	Test Console Log	Masterlog	3m 25s		
+140	srTe_3107_7Label_BgpEntropy_Vprn_dataPathCheck	Test Console Log	Masterlog	3m 38s		
+141	SuiteCleanup::srTe3107DataPathMaxLabel_ospf	Test Console Log	Masterlog	7m 39s		
+Suite	srTeDataPathMaxLabel_ospf_DscpPreserveOn		01:48:40	00:00:00	pending...
+142	SuiteSetup::srTeDataPathMaxLabel_ospf_DscpPreserveOn	Test Console Log	Masterlog	1m 6s		
+143	srTe_1Label_Epipe_dataPathCheck_DscpOn	Test Console Log	Masterlog	2m 39s		
+144	srTe_2Label_Epipe_dataPathCheck_DscpOn	Test Console Log	Masterlog	2m 41s		
+145	srTe_3Label_Epipe_dataPathCheck_DscpOn	Test Console Log	Masterlog	2m 45s		
+146	srTe_4Label_Epipe_dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 10s		
+147	srTe_5Label_Epipe_dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 13s		
+148	srTe_6Label_Epipe_dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 8s		
+149	srTe_7Label_Epipe_dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 4s		
+150	srTe_1Label_EpipeCtrlWrd_dataPathCheck_DscpOn	Test Console Log	Masterlog	2m 35s		
+151	srTe_2Label_EpipeCtrlWrd_dataPathCheck_DscpOn	Test Console Log	Masterlog	2m 40s		
+152	srTe_3Label_EpipeCtrlWrd_dataPathCheck_DscpOn	Test Console Log	Masterlog	2m 40s		
+153	srTe_4Label_EpipeCtrlWrd_dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 1s		
+154	srTe_5Label_EpipeCtrlWrd_dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 1s		
+155	srTe_6Label_EpipeCtrlWrd_dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 1s		
+156	srTe_7Label_EpipeCtrlWrd_dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 4s		
+157	srTe_1Label_Vprn_dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 12s		
+158	srTe_2Label_Vprn_dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 16s		
+159	srTe_3Label_Vprn_dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 17s		
+160	srTe_4Label_Vprn_dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 23s		
+161	srTe_5Label_Vprn_dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 24s		
+162	srTe_6Label_Vprn_dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 22s		
+163	srTe_7Label_Vprn_dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 26s		
+164	srTeEpipe_dataPathCheck_DscpOn	Test Console Log	Masterlog	2m 48s		
+165	srTeEpipeCtrlWrd_dataPathCheck_DscpOn	Test Console Log	Masterlog	2m 48s		
+166	srTeVprn_dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 25s		
+167	srTeEpipeRlfa_dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 40s		
+168	srTeEpipeRlfaCtrlWrd_dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 39s		
+169	srTeVprnRlfa_dataPathCheck_DscpOn	Test Console Log	Masterlog	4m 19s		
+170	srTeEpipeTiLfa_dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 42s		
+171	srTeEpipeTiLfaCtrlWrd__dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 41s		
+172	srTeVprnTiLfa_dataPathCheck_DscpOn	Test Console Log	Masterlog	4m 17s		
+173	srTeEpipeImplicitNull_dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 18s		
+174	srTeEpipeImplicitNullCtrlWrd_dataPathCheck_DscpOn	Test Console Log	Masterlog	2m 46s		
+175	srTeVprnImplicitNull_dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 25s		
+176	SuiteCleanup::srTeDataPathMaxLabel_ospf_DscpPreserveOn	Test Console Log	Masterlog	1m 44s		
+Suite	srTe3107DataPathMaxLabel_ospf_DscpPreserveOn		00:42:07	00:00:00	pending...
+177	SuiteSetup::srTe3107DataPathMaxLabel_ospf_DscpPreserveOn	Test Console Log	Masterlog	50s		
+178	srTeEpipe3107_dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 17s		
+179	srTeEpipe3107CtrlWrd_dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 3s		
+180	srTeVprn3107_dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 23s		
+181	srTeEpipeRlfa3107_dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 37s		
+182	srTeEpipeRlfa3107CtrlWrd_dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 39s		
+183	srTeVprnRlfa3107_dataPathCheck_DscpOn	Test Console Log	Masterlog	4m 0s		
+184	srTeEpipeTiLfa3107_dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 38s		
+185	srTeEpipeTiLfa3107CtrlWrd_dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 38s		
+186	srTeVprnTiLfa3107_dataPathCheck_DscpOn	Test Console Log	Masterlog	4m 2s		
+187	srTeEpipeImplicitNull3107_dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 34s		
+188	srTeVprn3107ImplicitNull_dataPathCheck_DscpOn	Test Console Log	Masterlog	3m 13s		
+189	SuiteCleanup::srTe3107DataPathMaxLabel_ospf_DscpPreserveOn	Test Console Log	Masterlog	2m 13s		
+Suite	srTeDataPathMaxLabel_isis		02:47:04	00:00:00	pending...
+190	SuiteSetup::srTeDataPathMaxLabel_isis	Test Console Log	Masterlog	8m 12s		
+191	srTe_1Label_Epipe_dataPathCheck_isis	Test Console Log	Masterlog	2m 36s		
+192	srTe_2Label_Epipe_dataPathCheck_isis	Test Console Log	Masterlog	2m 40s		
+193	srTe_3Label_Epipe_dataPathCheck_isis	Test Console Log	Masterlog	2m 43s		
+194	srTe_4Label_Epipe_dataPathCheck_isis	Test Console Log	Masterlog	2m 43s		
+195	srTe_5Label_Epipe_dataPathCheck_isis	Test Console Log	Masterlog	2m 46s		
+196	srTe_6Label_Epipe_dataPathCheck_isis	Test Console Log	Masterlog	2m 46s		
+197	srTe_7Label_Epipe_dataPathCheck_isis	Test Console Log	Masterlog	2m 49s		
+198	srTe_8Label_Epipe_dataPathCheck_isis	Test Console Log	Masterlog	2m 57s		
+199	srTe_1Label_EpipeCtrlWrd_dataPathCheck_isis	Test Console Log	Masterlog	2m 38s		
+200	srTe_2Label_EpipeCtrlWrd_dataPathCheck_isis	Test Console Log	Masterlog	2m 41s		
+201	srTe_3Label_EpipeCtrlWrd_dataPathCheck_isis	Test Console Log	Masterlog	2m 41s		
+202	srTe_4Label_EpipeCtrlWrd_dataPathCheck_isis	Test Console Log	Masterlog	2m 45s		
+203	srTe_5Label_EpipeCtrlWrd_dataPathCheck_isis	Test Console Log	Masterlog	2m 47s		
+204	srTe_6Label_EpipeCtrlWrd_dataPathCheck_isis	Test Console Log	Masterlog	2m 48s		
+205	srTe_7Label_EpipeCtrlWrd_dataPathCheck_isis	Test Console Log	Masterlog	2m 50s		
+206	srTe_8Label_EpipeCtrlWrd_dataPathCheck_isis	Test Console Log	Masterlog	2m 56s		
+207	srTe_1Label_Vprn_dataPathCheck_isis	Test Console Log	Masterlog	3m 12s		
+208	srTe_2Label_Vprn_dataPathCheck_isis	Test Console Log	Masterlog	3m 16s		
+209	srTe_3Label_Vprn_dataPathCheck_isis	Test Console Log	Masterlog	3m 19s		
+210	srTe_4Label_Vprn_dataPathCheck_isis	Test Console Log	Masterlog	3m 22s		
+211	srTe_5Label_Vprn_dataPathCheck_isis	Test Console Log	Masterlog	3m 25s		
+212	srTe_6Label_Vprn_dataPathCheck_isis	Test Console Log	Masterlog	3m 26s		
+213	srTe_7Label_Vprn_dataPathCheck_isis	Test Console Log	Masterlog	3m 29s		
+214	srTe_8Label_Vprn_dataPathCheck_isis	Test Console Log	Masterlog	3m 11s		
+215	srTe_1Label_Epipe_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	2m 37s		
+216	srTe_2Label_Epipe_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	2m 40s		
+217	srTe_3Label_Epipe_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	2m 42s		
+218	srTe_4Label_Epipe_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	2m 44s		
+219	srTe_5Label_Epipe_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	2m 46s		
+220	srTe_6Label_Epipe_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	2m 48s		
+221	srTe_7Label_Epipe_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	2m 50s		
+222	srTe_8Label_Epipe_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	2m 53s		
+223	srTe_1Label_EpipeCtrlWrd_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	2m 37s		
+224	srTe_2Label_EpipeCtrlWrd_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	2m 39s		
+225	srTe_1Label_Vprn_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	3m 14s		
+226	srTe_2Label_Vprn_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	3m 16s		
+227	srTe_3Label_Vprn_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	3m 18s		
+228	srTe_4Label_Vprn_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	3m 23s		
+229	srTe_5Label_Vprn_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	3m 24s		
+230	srTe_6Label_Vprn_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	3m 22s		
+231	srTe_7Label_Vprn_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	3m 26s		
+232	srTe_7Label_Vprn_MplsGlobalEntropy_dataPathCheck_isis	Test Console Log	Masterlog	3m 27s		
+233	srTe_7Label_Epipe_MplsGlobalEntropy_dataPathCheck_isis	Test Console Log	Masterlog	2m 53s		
+234	srTe_7Label_Vprn_BgpEntropy_dataPathCheck_isis	Test Console Log	Masterlog	3m 28s		
+235	srTe_7Label_Vprn_Bgp_Sr_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	3m 26s		
+236	srTe_8Label_Vprn_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	3m 8s		
+237	srTe_8Label_Vprn_MplsGlobalEntropy_dataPathCheck_isis	Test Console Log	Masterlog	3m 8s		
+238	srTe_8Label_Epipe_MplsGlobalEntropy_dataPathCheck_isis	Test Console Log	Masterlog	2m 57s		
+239	srTe_8Label_Vprn_BgpEntropy_dataPathCheck_isis	Test Console Log	Masterlog	3m 13s		
+240	srTe_8Label_Vprn_Bgp_Sr_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	3m 14s		
+241	SuiteCleanup::srTeDataPathMaxLabel_isis	Test Console Log	Masterlog	8m 33s		
+Suite	srTe3107DataPathMaxLabel_isis		01:35:08	00:00:00	pending...
+242	SuiteSetup::srTe3107DataPathMaxLabel_isis	Test Console Log	Masterlog	7m 55s		
+243	srTe_3107_1Label_BgpEntropy_Epipe_dataPathCheck_isis	Test Console Log	Masterlog	2m 36s		
+244	srTe_3107_2Label_BgpEntropy_Epipe_dataPathCheck_isis	Test Console Log	Masterlog	2m 40s		
+245	srTe_3107_3Label_BgpEntropy_Epipe_dataPathCheck_isis	Test Console Log	Masterlog	2m 46s		
+246	srTe_3107_4Label_BgpEntropy_Epipe_dataPathCheck_isis	Test Console Log	Masterlog	2m 49s		
+247	srTe_3107_5Label_BgpEntropy_Epipe_dataPathCheck_isis	Test Console Log	Masterlog	2m 55s		
+248	srTe_3107_6Label_BgpEntropy_Epipe_dataPathCheck_isis	Test Console Log	Masterlog	3m 1s		
+249	srTe_3107_7Label_BgpEntropy_Epipe_dataPathCheck_isis	Test Console Log	Masterlog	2m 58s		
+250	srTe_3107_1Label_Epipe_CtrlWrd_dataPathCheck_isis	Test Console Log	Masterlog	2m 36s		
+251	srTe_3107_1Label_BgpEntropy_Epipe_CtrlWrd_dataPathCheck_isis	Test Console Log	Masterlog	2m 38s		
+252	srTe_3107_1Label_srTeEntropy_Epipe_CtrlWrd_dataPathCheck_isis	Test Console Log	Masterlog	2m 38s		
+253	srTe_3107_1Label_Vprn_dataPathCheck_isis	Test Console Log	Masterlog	3m 0s		
+254	srTe_3107_2Label_Vprn_dataPathCheck_isis	Test Console Log	Masterlog	3m 4s		
+255	srTe_3107_3Label_Vprn_dataPathCheck_isis	Test Console Log	Masterlog	3m 8s		
+256	srTe_3107_4Label_Vprn_dataPathCheck_isis	Test Console Log	Masterlog	3m 13s		
+257	srTe_3107_5Label_Vprn_dataPathCheck_isis	Test Console Log	Masterlog	3m 19s		
+258	srTe_3107_6Label_Vprn_dataPathCheck_isis	Test Console Log	Masterlog	3m 22s		
+259	srTe_3107_7Label_Vprn_dataPathCheck_isis	Test Console Log	Masterlog	3m 6s		
+260	srTe_3107_1Label_srTeEntropy_Vprn_dataPathCheck_isis	Test Console Log	Masterlog	2m 59s		
+261	srTe_3107_6Label_srTeEntropy_Vprn_dataPathCheck_isis	Test Console Log	Masterlog	3m 22s		
+262	srTe_3107_1Label_BgpEntropy_Vprn_dataPathCheck_isis	Test Console Log	Masterlog	3m 0s		
+263	srTe_3107_2Label_BgpEntropy_Vprn_dataPathCheck_isis	Test Console Log	Masterlog	3m 5s		
+264	srTe_3107_3Label_BgpEntropy_Vprn_dataPathCheck_isis	Test Console Log	Masterlog	3m 9s		
+265	srTe_3107_4Label_BgpEntropy_Vprn_dataPathCheck_isis	Test Console Log	Masterlog	3m 13s		
+266	srTe_3107_5Label_BgpEntropy_Vprn_dataPathCheck_isis	Test Console Log	Masterlog	3m 17s		
+267	srTe_3107_6Label_BgpEntropy_Vprn_dataPathCheck_isis	Test Console Log	Masterlog	3m 22s		
+268	srTe_3107_7Label_BgpEntropy_Vprn_dataPathCheck_isis	Test Console Log	Masterlog	3m 4s		
+269	SuiteCleanup::srTe3107DataPathMaxLabel_isis	Test Console Log	Masterlog	8m 53s		
+Suite	srTe3107DataPathMaxLabel_isis_ipv6		01:04:21	00:00:00	pending...
+270	SuiteSetup::srTe3107DataPathMaxLabel_isis_ipv6	Test Console Log	Masterlog	8m 7s		
+271	srTe_3107_1Label_Vprn_dataPathCheck_isis_ipv6	Test Console Log	Masterlog	3m 24s		
+272	srTe_3107_2Label_Vprn_dataPathCheck_isis_ipv6	Test Console Log	Masterlog	3m 15s		
+273	srTe_3107_3Label_Vprn_dataPathCheck_isis_ipv6	Test Console Log	Masterlog	3m 22s		
+274	srTe_3107_4Label_Vprn_dataPathCheck_isis_ipv6	Test Console Log	Masterlog	3m 26s		
+275	srTe_3107_5Label_Vprn_dataPathCheck_isis_ipv6	Test Console Log	Masterlog	3m 32s		
+276	srTe_3107_6Label_Vprn_dataPathCheck_isis_ipv6	Test Console Log	Masterlog	3m 36s		
+277	srTe_3107_7Label_Vprn_dataPathCheck_isis_ipv6	Test Console Log	Masterlog	3m 13s		
+278	srTe_3107_1Label_BgpEntropy_Vprn_dataPathCheck_isis_ipv6	Test Console Log	Masterlog	3m 15s		
+279	srTe_3107_2Label_BgpEntropy_Vprn_dataPathCheck_isis_ipv6	Test Console Log	Masterlog	3m 17s		
+280	srTe_3107_3Label_BgpEntropy_Vprn_dataPathCheck_isis_ipv6	Test Console Log	Masterlog	3m 22s		
+281	srTe_3107_4Label_BgpEntropy_Vprn_dataPathCheck_isis_ipv6	Test Console Log	Masterlog	3m 27s		
+282	srTe_3107_5Label_BgpEntropy_Vprn_dataPathCheck_isis_ipv6	Test Console Log	Masterlog	3m 31s		
+283	srTe_3107_6Label_BgpEntropy_Vprn_dataPathCheck_isis_ipv6	Test Console Log	Masterlog	3m 36s		
+284	srTe_3107_7Label_BgpEntropy_Vprn_dataPathCheck_isis_ipv6	Test Console Log	Masterlog	3m 12s		
+285	SuiteCleanup::srTe3107DataPathMaxLabel_isis_ipv6	Test Console Log	Masterlog	8m 46s		
+Suite	srTeDataPathMaxLabel_ospf_igpSC		00:00:00	00:00:00	pending...
+286	SuiteSetup::srTeDataPathMaxLabel_ospf_igpSC	Test Console Log	Masterlog	unknown		
+287	srTe_1Label_netwIntf_igpSC_dataPathCheck	Test Console Log	Masterlog	unknown		
+288	srTe_2Label_netwIntf_igpSC_dataPathCheck	Test Console Log	Masterlog	unknown		
+289	srTe_3Label_netwIntf_igpSC_dataPathCheck	Test Console Log	Masterlog	unknown		
+290	srTe_4Label_netwIntf_igpSC_dataPathCheck	Test Console Log	Masterlog	unknown		
+291	srTe_5Label_netwIntf_igpSC_dataPathCheck	Test Console Log	Masterlog	unknown		
+292	srTe_6Label_netwIntf_igpSC_dataPathCheck	Test Console Log	Masterlog	unknown		
+293	srTe_7Label_netwIntf_igpSC_dataPathCheck	Test Console Log	Masterlog	unknown		
+294	srTe_8Label_netwIntf_igpSC_dataPathCheck	Test Console Log	Masterlog	unknown		
+295	srTe_1Label_netwIntf_igpSC_Entropy_dataPathCheck	Test Console Log	Masterlog	unknown		
+296	srTe_2Label_netwIntf_igpSC_Entropy_dataPathCheck	Test Console Log	Masterlog	unknown		
+297	srTe_3Label_netwIntf_igpSC_Entropy_dataPathCheck	Test Console Log	Masterlog	unknown		
+298	srTe_4Label_netwIntf_igpSC_Entropy_dataPathCheck	Test Console Log	Masterlog	unknown		
+299	srTe_5Label_netwIntf_igpSC_Entropy_dataPathCheck	Test Console Log	Masterlog	unknown		
+300	srTe_6Label_netwIntf_igpSC_Entropy_dataPathCheck	Test Console Log	Masterlog	unknown		
+301	srTe_7Label_netwIntf_igpSC_Entropy_dataPathCheck	Test Console Log	Masterlog	unknown		
+302	srTe_netwIntf_igpSC_dataPathCheck	Test Console Log	Masterlog	unknown		
+303	srTe_netwIntf_igpSC_Rlfa_dataPathCheck	Test Console Log	Masterlog	unknown		
+304	srTe_netwIntf_igpSC_Rlfa4Label_dataPathCheck	Test Console Log	Masterlog	unknown		
+305	srTe_netwIntf_igpSC_Rlfa5Label_dataPathCheck	Test Console Log	Masterlog	unknown		
+306	srTe_netwIntf_igpSC_TiLfa_dataPathCheck	Test Console Log	Masterlog	unknown		
+307	srTe_netwIntf_igpSC_ImplicitNull_dataPathCheck	Test Console Log	Masterlog	unknown		
+308	SuiteCleanup::srTeDataPathMaxLabel_ospf_igpSC	Test Console Log	Masterlog	unknown		
+Suite	srTeDataPathMaxLabel_ospf_DscpPreserveOn_igpSC		00:00:00	00:00:00	pending...
+309	SuiteSetup::srTeDataPathMaxLabel_ospf_DscpPreserveOn_igpSC	Test Console Log	Masterlog	unknown		
+310	srTe_1Label_netwIntf_igpSC_dataPathCheck_DscpOn	Test Console Log	Masterlog	unknown		
+311	srTe_2Label_netwIntf_igpSC_dataPathCheck_DscpOn	Test Console Log	Masterlog	unknown		
+312	srTe_3Label_netwIntf_igpSC_dataPathCheck_DscpOn	Test Console Log	Masterlog	unknown		
+313	srTe_4Label_netwIntf_igpSC_dataPathCheck_DscpOn	Test Console Log	Masterlog	unknown		
+314	srTe_5Label_netwIntf_igpSC_dataPathCheck_DscpOn	Test Console Log	Masterlog	unknown		
+315	srTe_6Label_netwIntf_igpSC_dataPathCheck_DscpOn	Test Console Log	Masterlog	unknown		
+316	srTe_7Label_netwIntf_igpSC_dataPathCheck_DscpOn	Test Console Log	Masterlog	unknown		
+317	srTe_8Label_netwIntf_igpSC_dataPathCheck_DscpOn	Test Console Log	Masterlog	unknown		
+318	srTe_netwIntf_igpSC_dataPathCheck_DscpOn	Test Console Log	Masterlog	unknown		
+319	srTe_netwIntf_igpSC_Rlfa_dataPathCheck_DscpOn	Test Console Log	Masterlog	unknown		
+320	srTe_netwIntf_igpSC_TiLfa_dataPathCheck_DscpOn	Test Console Log	Masterlog	unknown		
+321	srTe_netwIntf_igpSC_ImplicitNull_dataPathCheck_DscpOn	Test Console Log	Masterlog	unknown		
+322	SuiteCleanup::srTeDataPathMaxLabel_ospf_DscpPreserveOn_igpSC	Test Console Log	Masterlog	unknown		
+Suite	srTeDataPathMaxLabel_isis_igpSC		00:00:00	00:00:00	pending...
+323	SuiteSetup::srTeDataPathMaxLabel_isis_igpSC	Test Console Log	Masterlog	unknown		
+324	srTe_1Label_netwIntf_igpSC_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+325	srTe_2Label_netwIntf_igpSC_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+326	srTe_3Label_netwIntf_igpSC_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+327	srTe_4Label_netwIntf_igpSC_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+328	srTe_5Label_netwIntf_igpSC_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+329	srTe_6Label_netwIntf_igpSC_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+330	srTe_7Label_netwIntf_igpSC_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+331	srTe_8Label_netwIntf_igpSC_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+332	srTe_1Label_netwIntf_igpSC_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+333	srTe_2Label_netwIntf_igpSC_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+334	srTe_3Label_netwIntf_igpSC_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+335	srTe_4Label_netwIntf_igpSC_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+336	srTe_5Label_netwIntf_igpSC_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+337	srTe_6Label_netwIntf_igpSC_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+338	srTe_7Label_netwIntf_igpSC_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+339	srTe_8Label_netwIntf_igpSC_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+340	SuiteCleanup::srTeDataPathMaxLabel_isis_igpSC	Test Console Log	Masterlog	unknown		
+Suite	srTeDataPathMaxLabel_ospf_bgpSC		00:17:46	00:00:00	pending...
+341	SuiteSetup::srTeDataPathMaxLabel_ospf_bgpSC	Test Console Log	Masterlog	7m 11s		
+342	srTe_1Label_netwIntf_bgpSC_dataPathCheck	Test Console Log	Masterlog	2m 55s		
+343	srTe_2Label_netwIntf_bgpSC_dataPathCheck	Test Console Log	Masterlog	unknown		
+344	srTe_3Label_netwIntf_bgpSC_dataPathCheck	Test Console Log	Masterlog	unknown		
+345	srTe_4Label_netwIntf_bgpSC_dataPathCheck	Test Console Log	Masterlog	unknown		
+346	srTe_5Label_netwIntf_bgpSC_dataPathCheck	Test Console Log	Masterlog	unknown		
+347	srTe_6Label_netwIntf_bgpSC_dataPathCheck	Test Console Log	Masterlog	unknown		
+348	srTe_7Label_netwIntf_bgpSC_dataPathCheck	Test Console Log	Masterlog	unknown		
+349	srTe_8Label_netwIntf_bgpSC_dataPathCheck	Test Console Log	Masterlog	unknown		
+350	srTe_1Label_netwIntf_bgpSC_Entropy_dataPathCheck	Test Console Log	Masterlog	unknown		
+351	srTe_2Label_netwIntf_bgpSC_Entropy_dataPathCheck	Test Console Log	Masterlog	unknown		
+352	srTe_3Label_netwIntf_bgpSC_Entropy_dataPathCheck	Test Console Log	Masterlog	unknown		
+353	srTe_4Label_netwIntf_bgpSC_Entropy_dataPathCheck	Test Console Log	Masterlog	unknown		
+354	srTe_5Label_netwIntf_bgpSC_Entropy_dataPathCheck	Test Console Log	Masterlog	unknown		
+355	srTe_6Label_netwIntf_bgpSC_Entropy_dataPathCheck	Test Console Log	Masterlog	unknown		
+356	srTe_7Label_netwIntf_bgpSC_Entropy_dataPathCheck	Test Console Log	Masterlog	unknown		
+357	srTe_netwIntf_bgpSC_dataPathCheck	Test Console Log	Masterlog	unknown		
+358	srTe_netwIntf_bgpSC_Rlfa_dataPathCheck	Test Console Log	Masterlog	unknown		
+359	srTe_netwIntf_bgpSC_Rlfa4Label_dataPathCheck	Test Console Log	Masterlog	unknown		
+360	srTe_netwIntf_bgpSC_Rlfa5Label_dataPathCheck	Test Console Log	Masterlog	unknown		
+361	srTe_netwIntf_bgpSC_TiLfa_dataPathCheck	Test Console Log	Masterlog	unknown		
+362	srTe_netwIntf_bgpSC_ImplicitNull_dataPathCheck	Test Console Log	Masterlog	unknown		
+363	SuiteCleanup::srTeDataPathMaxLabel_ospf_bgpSC	Test Console Log	Masterlog	7m 40s		
+Suite	srTeDataPathMaxLabel_ospf_DscpPreserveOn_bgpSC		00:00:00	00:00:00	pending...
+364	SuiteSetup::srTeDataPathMaxLabel_ospf_DscpPreserveOn_bgpSC	Test Console Log	Masterlog	unknown		
+365	srTe_1Label_netwIntf_bgpSC_dataPathCheck_DscpOn	Test Console Log	Masterlog	unknown		
+366	srTe_2Label_netwIntf_bgpSC_dataPathCheck_DscpOn	Test Console Log	Masterlog	unknown		
+367	srTe_3Label_netwIntf_bgpSC_dataPathCheck_DscpOn	Test Console Log	Masterlog	unknown		
+368	srTe_4Label_netwIntf_bgpSC_dataPathCheck_DscpOn	Test Console Log	Masterlog	unknown		
+369	srTe_5Label_netwIntf_bgpSC_dataPathCheck_DscpOn	Test Console Log	Masterlog	unknown		
+370	srTe_6Label_netwIntf_bgpSC_dataPathCheck_DscpOn	Test Console Log	Masterlog	unknown		
+371	srTe_7Label_netwIntf_bgpSC_dataPathCheck_DscpOn	Test Console Log	Masterlog	unknown		
+372	srTe_8Label_netwIntf_bgpSC_dataPathCheck_DscpOn	Test Console Log	Masterlog	unknown		
+373	srTe_netwIntf_bgpSC_dataPathCheck_DscpOn	Test Console Log	Masterlog	unknown		
+374	srTe_netwIntf_bgpSC_Rlfa_dataPathCheck_DscpOn	Test Console Log	Masterlog	unknown		
+375	srTe_netwIntf_bgpSC_TiLfa_dataPathCheck_DscpOn	Test Console Log	Masterlog	unknown		
+376	srTe_netwIntf_bgpSC_ImplicitNull_dataPathCheck_DscpOn	Test Console Log	Masterlog	unknown		
+377	SuiteCleanup::srTeDataPathMaxLabel_ospf_DscpPreserveOn_bgpSC	Test Console Log	Masterlog	unknown		
+Suite	srTeDataPathMaxLabel_isis_bgpSC		00:00:00	00:00:00	pending...
+378	SuiteSetup::srTeDataPathMaxLabel_isis_bgpSC	Test Console Log	Masterlog	unknown		
+379	srTe_1Label_netwIntf_bgpSC_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+380	srTe_2Label_netwIntf_bgpSC_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+381	srTe_3Label_netwIntf_bgpSC_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+382	srTe_4Label_netwIntf_bgpSC_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+383	srTe_5Label_netwIntf_bgpSC_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+384	srTe_6Label_netwIntf_bgpSC_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+385	srTe_7Label_netwIntf_bgpSC_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+386	srTe_8Label_netwIntf_bgpSC_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+387	srTe_1Label_netwIntf_bgpSC_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+388	srTe_2Label_netwIntf_bgpSC_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+389	srTe_3Label_netwIntf_bgpSC_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+390	srTe_4Label_netwIntf_bgpSC_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+391	srTe_5Label_netwIntf_bgpSC_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+392	srTe_6Label_netwIntf_bgpSC_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+393	srTe_7Label_netwIntf_bgpSC_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+394	srTe_8Label_netwIntf_bgpSC_Entropy_dataPathCheck_isis	Test Console Log	Masterlog	unknown		
+395	SuiteCleanup::srTeDataPathMaxLabel_isis_bgpSC	Test Console Log	Masterlog	unknown
